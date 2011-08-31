@@ -108,5 +108,6 @@ body {
 
 #school_home #sidebar {
     width: {{ school.sidebar_width }};
+    min-height: 300px;
     border: 0;
 }

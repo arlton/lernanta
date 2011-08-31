@@ -19,15 +19,12 @@
   <div id="sidebar">
     <br>
     <figure class="school_img">
-      <a href="{{ school.get_absolute_url }}">
-	<img src="/media/images/sow_shield.png" alt="project image"/>        
-<!--
+      <a href="{{ school.get_absolute_url }}">       
 	{% if school.logo %}
   	      <img src="{{ MEDIA_URL }}{{ school.logo }}" alt="project image"/>
         {% else %}
           <img src="/media/images/school-missing.png" alt="project image"/>
         {% endif %}
--->
 
       </a>
     </figure>
@@ -43,7 +40,6 @@
 -->
   </div>
   {{ school.description|embed|safe }}
-  </ b>
 
 <!-- THIS CODE NEEDS TO ONLY BE ON THE WEBCRAFT SCHOOL PAGE BEGIN -->
 
