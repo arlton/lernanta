@@ -23,4 +23,8 @@ body {
 }
 {% endif %}
 
+#school_home #sidebar {
+    width: {{ school.sidebar_width }};
+}
+
 {{ school.extra_styles|safe }}
