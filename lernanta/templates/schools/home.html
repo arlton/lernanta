@@ -28,30 +28,21 @@
 
       </a>
     </figure>
-<!--
-    <section id="people" class="panel">
-      <br>
-      <h2 class="school_header">{{ _('School Organizers') }}</h2>
-      <br>
-      {% for organizer in school.organizers.all %}
-        <a href="{{ organizer.get_absolute_url }}" title="{{ organizer }} (school organizer)"><img class="member-picture" src="{{ organizer.image_or_default }}" height="26" width="26" alt="{{ organizer }} (school organizer)"></a>
-      {% endfor %}
-    </section>
--->
+    {% if school.show_school_organizers %}
+      <section id="people" class="panel">
+        <br>
+        <h2 class="school_header">{{ _('School Organizers') }}</h2>
+        <br>
+        {% for organizer in school.organizers.all %}
+          <a href="{{ organizer.get_absolute_url }}" title="{{ organizer }} (school organizer)"><img class="member-picture" src="{{ organizer.image_or_default }}" height="26" width="26" alt="{{ organizer }} (school organizer)"></a>
+        {% endfor %}
+      </section>
+    {% endif %}
   </div>
   {{ school.description|embed|safe }}
-
-<!-- THIS CODE NEEDS TO ONLY BE ON THE WEBCRAFT SCHOOL PAGE BEGIN -->
-
-<p>
-<a class="webcraft-browse">Browse all courses</a>
-or
-<button class="webcraft-button">Get notified of Webmaking 101 launch</button>
-</p>
-
-<!-- THIS CODE NEEDS TO ONLY BE ON THE WEBCRAFT SCHOOL PAGE END -->
-
-  {% project_list school %}
+  <br clear="all">
+  <br>
+  {% featured_list school %}
 </div>
 
 {% endblock %}
