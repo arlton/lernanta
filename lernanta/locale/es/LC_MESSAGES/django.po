@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LERNANTA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-02 16:08-0400\n"
+"POT-Creation-Date: 2011-09-02 16:16-0400\n"
 "PO-Revision-Date: 2011-04-11 8:23-0500\n"
 "Last-Translator: Vladimir Támara Patiño <vtamara@pasosdeJesus.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1097,21 +1097,35 @@ msgstr "Entrar"
 msgid "Loading"
 msgstr "Cargando"
 
-#: templates/base.html:98
+#: templates/base.html:99 templates/dashboard/splash.html:18
+msgid "Learn anything, with your peers."
+msgstr "Aprenda cualquier cosa, con sus colegas."
+
+#: templates/base.html:100 templates/dashboard/splash.html:20
+msgid ""
+"At P2PU, people work together to learn a particular topic by completing "
+"tasks, assessing individual and group work, and providing constructive "
+"feedback."
+msgstr ""
+"En P2PU, la gente trabaja unida para aprender sobre un tema particular "
+"completando tareas, evaluando el trabajo individual y colectivo, y brindando "
+"retroalimentación constructiva."
+
+#: templates/base.html:108
 msgid "Home"
 msgstr "Inicio"
 
-#: templates/base.html:141 templates/drumbeatmail/base.html:52
+#: templates/base.html:151 templates/drumbeatmail/base.html:52
 #: templates/projects/contact_organizers.html:49
 #: templates/users/profile_form_base.html:76
 msgid "en"
 msgstr "es"
 
-#: templates/base.html:160
+#: templates/base.html:170
 msgid "jquery.ui.datepicker-en.js"
 msgstr "jquery.ui.datepicker-es.js"
 
-#: templates/base.html:162
+#: templates/base.html:172
 msgid "js/script-en.js"
 msgstr "js/script-es.js"
 
@@ -1543,33 +1557,19 @@ msgstr "Crear Perfil"
 msgid "Learning for everyone, by everyone, about almost anything"
 msgstr "Aprendizaje para todos, por todos y acerca de casi todo"
 
-#: templates/dashboard/splash.html:18
-msgid "Learn anything, with your peers."
-msgstr "Aprenda cualquier cosa, con sus colegas."
-
-#: templates/dashboard/splash.html:20
-msgid ""
-"At P2PU, people work together to learn a particular topic by completing "
-"tasks, assessing individual and group work, and providing constructive "
-"feedback."
-msgstr ""
-"En P2PU, la gente trabaja unida para aprender sobre un tema particular "
-"completando tareas, evaluando el trabajo individual y colectivo, y brindando "
-"retroalimentación constructiva."
-
-#: templates/dashboard/splash.html:22
+#: templates/dashboard/splash.html:21
 msgid "Join the Community"
 msgstr "Únete a la Comunidad"
 
-#: templates/dashboard/splash.html:22
+#: templates/dashboard/splash.html:21
 msgid "It's free!"
 msgstr "Es Gratis!"
 
-#: templates/dashboard/splash.html:24
+#: templates/dashboard/splash.html:23
 msgid "As featured in"
 msgstr "Como aparece en"
 
-#: templates/dashboard/splash.html:41
+#: templates/dashboard/splash.html:39
 msgid "Featured Courses"
 msgstr "Cursos Destacados"
 
