@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LERNANTA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-15 08:48-0400\n"
+"POT-Creation-Date: 2011-09-02 16:16-0400\n"
 "PO-Revision-Date: 2011-04-11 8:23-0500\n"
 "Last-Translator: Vladimir Támara Patiño <vtamara@pasosdeJesus.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,7 @@ msgstr "Esta tarea fue eliminada."
 msgid "You can't edit this page"
 msgstr "Usted no puede editar esta página"
 
-#: apps/content/views.py:75 apps/projects/views.py:311
+#: apps/content/views.py:75 apps/projects/views.py:317
 #, python-format
 msgid "%s updated!"
 msgstr "¡%s actualizado!"
@@ -162,7 +162,7 @@ msgid "Can't send email"
 msgstr "No puede enviarse correo"
 
 #: apps/drumbeatmail/views.py:180 apps/drumbeatmail/views.py:210
-#: apps/projects/views.py:550
+#: apps/projects/views.py:556
 msgid "Message successfully sent."
 msgstr "Mensaje enviado con éxito."
 
@@ -235,17 +235,17 @@ msgstr "Usted no está participando en este %s"
 msgid "This field is required."
 msgstr "Este campo es requerido."
 
-#: apps/projects/forms.py:81 apps/schools/forms.py:37 apps/schools/forms.py:51
-#: apps/schools/forms.py:65 apps/schools/forms.py:79 apps/users/forms.py:250
+#: apps/projects/forms.py:81 apps/schools/forms.py:38 apps/schools/forms.py:52
+#: apps/schools/forms.py:66 apps/schools/forms.py:80 apps/users/forms.py:250
 #, python-format
 msgid "Image exceeds max image size: %(max)dk"
 msgstr "La imagen excede el tamaño máximo: %(max)dk"
 
-#: apps/projects/forms.py:111 apps/schools/forms.py:97
+#: apps/projects/forms.py:111 apps/schools/forms.py:98
 msgid "That user account was deleted."
 msgstr "Esa cuenta de usuario fue borrada."
 
-#: apps/projects/forms.py:114 apps/schools/forms.py:100
+#: apps/projects/forms.py:114 apps/schools/forms.py:101
 #, python-format
 msgid "There is no user with username: %s."
 msgstr "No hay nadie con ese nombre de usuario: %s."
@@ -274,8 +274,8 @@ msgstr "Cuerpo"
 msgid "That study group, course, ... does not exist."
 msgstr "Ese grupo de estudio, curso, ... no existe."
 
-#: apps/projects/forms.py:165 apps/schools/forms.py:116
-#: apps/schools/forms.py:141 apps/schools/forms.py:166
+#: apps/projects/forms.py:165 apps/schools/forms.py:117
+#: apps/schools/forms.py:142
 #, python-format
 msgid "There is no study group, course, ... with short name: %s."
 msgstr "No hay un grupo de estudio, curso, ... con nombre corto: %s."
@@ -284,7 +284,7 @@ msgstr "No hay un grupo de estudio, curso, ... con nombre corto: %s."
 msgid "There is no course with this short name on the archive."
 msgstr "No hay un curso con ese nombre corto en el archivo."
 
-#: apps/projects/models.py:95
+#: apps/projects/models.py:93
 msgid ""
 "Study Group -- group of people working collaboratively to acquire and share "
 "knowledge."
@@ -292,7 +292,7 @@ msgstr ""
 "Grupo de Estudio -- grupo de personas trabajando colaborativamente para "
 "adquirir y compartir conocimiento."
 
-#: apps/projects/models.py:97
+#: apps/projects/models.py:95
 msgid ""
 "Course -- led by one or more organizers with skills on a field who direct "
 "and help participants during their learning."
@@ -300,7 +300,7 @@ msgstr ""
 "Curso -- lidereado por uno o más organizadores con experiencia en un tema "
 "que dirigen y ayudan a los participantes durente su aprendizaje."
 
-#: apps/projects/models.py:100
+#: apps/projects/models.py:98
 msgid ""
 "Other -- if other, please fill out and describe the term you will use to "
 "categorize it."
@@ -308,106 +308,106 @@ msgstr ""
 "Otro -- si es otro, por favor rellene y describa el término que usted usaría "
 "para categorizarlo."
 
-#: apps/projects/models.py:143
+#: apps/projects/models.py:141
 msgid "group"
 msgstr "grupo"
 
-#: apps/projects/models.py:146
+#: apps/projects/models.py:144
 #, python-format
 msgid "%(name)s %(kind)s"
 msgstr "%(kind)s %(name)s"
 
-#: apps/projects/models.py:157
+#: apps/projects/models.py:155
 msgid "created"
 msgstr "creó"
 
-#: apps/projects/views.py:86 apps/projects/views.py:180
-#: apps/projects/views.py:260
+#: apps/projects/views.py:92 apps/projects/views.py:186
+#: apps/projects/views.py:266
 msgid "Full Description"
 msgstr "Descripción Completa"
 
-#: apps/projects/views.py:97
+#: apps/projects/views.py:103
 #, python-format
 msgid "The %s has been created."
 msgstr "El %s ha sido creado."
 
-#: apps/projects/views.py:102
+#: apps/projects/views.py:108
 msgid "Problem creating the study group, course, ..."
 msgstr "Problema creando el grupo de estudio, curso, ..."
 
-#: apps/projects/views.py:205
+#: apps/projects/views.py:211
 #, python-format
 msgid "The %s has been cloned."
 msgstr "El %s ha sido clonado."
 
-#: apps/projects/views.py:211
+#: apps/projects/views.py:217
 msgid "There was a problem cloning the study group, course, ..."
 msgstr "Ocurrió un problema al clonar el grupo de estudio, curso, ..."
 
-#: apps/projects/views.py:278
+#: apps/projects/views.py:284
 #, python-format
 msgid "The %s has been imported."
 msgstr "El %s ha sido importado."
 
-#: apps/projects/views.py:283
+#: apps/projects/views.py:289
 msgid "Problem importing the study group, course, ..."
 msgstr "Problema importando el grupo de estudio, curso, ..."
 
-#: apps/projects/views.py:351 apps/schools/views.py:126
+#: apps/projects/views.py:357 apps/schools/views.py:126
 #: apps/schools/views.py:168 apps/schools/views.py:210
 #: apps/schools/views.py:252
 msgid "Image updated"
 msgstr "Imagen actualizada"
 
-#: apps/projects/views.py:358 apps/schools/views.py:132
+#: apps/projects/views.py:364 apps/schools/views.py:132
 #: apps/schools/views.py:174 apps/schools/views.py:216
 #: apps/schools/views.py:258
 msgid "There was an error uploading your image"
 msgstr "Ocurrió un error al subir la imagen"
 
-#: apps/projects/views.py:380
+#: apps/projects/views.py:386
 msgid "Link added."
 msgstr "Enlace añadido."
 
-#: apps/projects/views.py:384
+#: apps/projects/views.py:390
 msgid "There was an error adding your link."
 msgstr "Ocurrió un error al añadir el enlace."
 
-#: apps/projects/views.py:404 apps/projects/views.py:434
+#: apps/projects/views.py:410 apps/projects/views.py:440
 #: apps/users/views.py:598
 msgid "You can't edit this link"
 msgstr "Usted no puede editar este enlace"
 
-#: apps/projects/views.py:414
+#: apps/projects/views.py:420
 msgid "Link updated."
 msgstr "Enlace actualizado."
 
-#: apps/projects/views.py:436
+#: apps/projects/views.py:442
 msgid "The link was deleted"
 msgstr "El enlace fue removido"
 
-#: apps/projects/views.py:457
+#: apps/projects/views.py:463
 msgid "Participant added."
 msgstr "Participante añadido."
 
-#: apps/projects/views.py:463
+#: apps/projects/views.py:469
 msgid "There was an error adding the participant."
 msgstr "Ocurrió un error al añadir el participante."
 
-#: apps/projects/views.py:495
+#: apps/projects/views.py:501
 msgid "You can't make that person an organizer"
 msgstr "Usted no puede convertir ese usuario en organizador"
 
-#: apps/projects/views.py:498
+#: apps/projects/views.py:504
 msgid "The participant is now an organizer."
 msgstr "El participante ahora es un organizador."
 
-#: apps/projects/views.py:511
+#: apps/projects/views.py:517
 #, python-format
 msgid "The participant %s has been removed."
 msgstr "El participante %s ha sido removido."
 
-#: apps/projects/views.py:531
+#: apps/projects/views.py:537
 #, python-format
 msgid "There was a problem saving the %s's status."
 msgstr "Ocurrió un problema al guardar el estado del %s."
@@ -470,32 +470,27 @@ msgstr "¡Comentario restaurado!"
 msgid "You are not school organizer"
 msgstr "Usted no esta organizando esta escuela"
 
-#: apps/schools/forms.py:103
+#: apps/schools/forms.py:104
 #, python-format
 msgid "User %s is organizing the school."
 msgstr "El usuario %s está organizando la escuela."
 
-#: apps/schools/forms.py:122 apps/schools/forms.py:147
+#: apps/schools/forms.py:123
 #, python-format
 msgid "The %(slug)s %(kind)s is not part of this school."
 msgstr "El %(kind)s %(slug)s no es parte de esta escuela."
 
-#: apps/schools/forms.py:126
+#: apps/schools/forms.py:127
 #, python-format
 msgid "The %(slug)s %(kind)s is already featured."
 msgstr "El %(kind)s %(slug)s ya está marcado como destacado."
 
-#: apps/schools/forms.py:151
-#, python-format
-msgid "The %(slug)s %(kind)s was already declined."
-msgstr "El %(kind)s %(slug)s ya fue rechazado."
-
-#: apps/schools/forms.py:172
+#: apps/schools/forms.py:148
 #, python-format
 msgid "The %(slug)s %(kind)s is already part of this school."
 msgstr "El %(kind)s %(slug)s ya es parte de esta escuela."
 
-#: apps/schools/forms.py:176
+#: apps/schools/forms.py:152
 #, python-format
 msgid "The %(slug)s %(kind)s is part of: %(school)s."
 msgstr "El %(kind)s %(slug)s es parte de: %(school)s."
@@ -531,32 +526,17 @@ msgstr "Ocurrió un problema al marcar el %s como destacado."
 msgid "The %s stopped being featured for this school."
 msgstr "El %s dejo de ser destacado en esta escuela."
 
-#: apps/schools/views.py:372
-#, python-format
-msgid "The %s was declined for this school."
-msgstr "El %s fue rechazado para esta escuela."
-
-#: apps/schools/views.py:377
-#, python-format
-msgid "There was an error when declining %s membership."
-msgstr "Ocurrió un error al declinar la membresía de %s."
-
-#: apps/schools/views.py:400
+#: apps/schools/views.py:373
 #, python-format
 msgid "The %s was added to this school."
 msgstr "El %s fue añadido a esta escuela."
 
-#: apps/schools/views.py:405
+#: apps/schools/views.py:378
 #, python-format
 msgid "There was an adding %s to this school."
 msgstr "Ocurrió un error al añadir %s a esta escuela."
 
-#: apps/schools/views.py:450
-#, python-format
-msgid "The %s stopped being declined for this school."
-msgstr "El %s dejo de ser rechazado para esta escuela."
-
-#: apps/schools/views.py:466
+#: apps/schools/views.py:411
 #, python-format
 msgid "The %s is no longer part of this school."
 msgstr "El %s ya no es parte de esta escuela."
@@ -660,8 +640,8 @@ msgstr "Ocurrió un error al publicar su mensaje"
 msgid "Tag"
 msgstr "Etiqueta"
 
-#: apps/tags/models.py:10 templates/projects/project_edit_summary.html:30
-#: templates/projects/sidebar.html:41
+#: apps/tags/models.py:10 templates/projects/project_edit_summary.html:27
+#: templates/projects/sidebar-original.html:41
 msgid "Tags"
 msgstr "Etiquetas"
 
@@ -921,93 +901,160 @@ msgstr ""
 "por las molestias ocasionadas, y esperamos que disfrute las nuevas "
 "funcionalidades."
 
-#: templates/_footer.html:7
+#: templates/_footer (copy).html:7
 msgid "About Us"
 msgstr "Acerca de Nosotros"
 
-#: templates/_footer.html:8 templates/base.html:71
+#: templates/_footer (copy).html:8 templates/_footer.html:44
 msgid "About P2PU"
 msgstr "Acerca de P2PU"
 
-#: templates/_footer.html:9 templates/base.html:65
+#: templates/_footer (copy).html:9 templates/base.html:68
+#: templates/base.html.py:74
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/_footer.html:10
+#: templates/_footer (copy).html:10 templates/_footer.html:46
 msgid "Announcements"
 msgstr "Anuncios"
 
-#: templates/_footer.html:11
+#: templates/_footer (copy).html:11 templates/_footer.html:28
 msgid "Get Involved"
-msgstr "Involucrarse"
+msgstr "Involúcrese"
 
-#: templates/_footer.html:12
+#: templates/_footer (copy).html:12 templates/_footer.html:47
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_footer.html:13
+#: templates/_footer (copy).html:13
 msgid "Old P2PU Site"
 msgstr "Antiguo Sitio de P2PU"
 
-#: templates/_footer.html:17
+#: templates/_footer (copy).html:17
 msgid "Contact Us"
 msgstr "Contáctenos"
 
-#: templates/_footer.html:18
+#: templates/_footer (copy).html:18
 msgid "Email"
 msgstr "Correo"
 
-#: templates/_footer.html:19
+#: templates/_footer (copy).html:19
 msgid "Facebook"
 msgstr "Facebook"
 
-#: templates/_footer.html:20
+#: templates/_footer (copy).html:20
 msgid "Twitter"
 msgstr "Twitter"
 
-#: templates/_footer.html:21
+#: templates/_footer (copy).html:21 templates/_footer.html:45
 msgid "FAQ"
 msgstr "Preguntas Frecuentes"
 
-#: templates/_footer.html:22
+#: templates/_footer (copy).html:22 templates/_footer.html:48
 msgid "Found a Bug?"
 msgstr "¿Encontró una falla?"
 
-#: templates/_footer.html:26
+#: templates/_footer (copy).html:26
 msgid "License Info"
 msgstr "Información de Licencia"
 
-#: templates/_footer.html:27
+#: templates/_footer (copy).html:27 templates/_footer.html:51
 msgid "License"
 msgstr "Licencia"
 
-#: templates/_footer.html:28
+#: templates/_footer (copy).html:28 templates/_footer.html:52
 msgid "Privacy Guidelines"
 msgstr "Políticas de Privacidad"
 
-#: templates/_footer.html:29
+#: templates/_footer (copy).html:29 templates/_footer.html:53
 msgid "Terms of Use"
 msgstr "Términos de Uso"
 
-#: templates/_footer.html:33
+#: templates/_footer (copy).html:33
 msgid "Creative Commons BY SA"
 msgstr "Creative Commons REC/BY CI/SA"
 
-#: templates/_footer.html:34
+#: templates/_footer (copy).html:34 templates/_footer.html:41
 msgid "CC BY SA"
 msgstr "CC REC/BY CI/SA"
 
-#: templates/_footer.html:37
+#: templates/_footer (copy).html:37
 msgid "Supporters"
 msgstr "Patrocinadores"
 
-#: templates/_footer.html:38
+#: templates/_footer (copy).html:38
 msgid "The Hewlett Foundation"
 msgstr "La Fundación Hewlett"
 
-#: templates/_footer.html:39
+#: templates/_footer (copy).html:39
 msgid "The Shuttleworth Foundation"
 msgstr "La Fundación Shuttleworth"
+
+#: templates/_footer (copy).html:46 templates/_footer.html:39
+msgid "(more)"
+msgstr "(más)"
+
+#: templates/_footer.html:5
+msgid "P2PU Schools:"
+msgstr "Escuelas en P2PU"
+
+#: templates/_footer.html:6 templates/_footer.html.py:7
+#: templates/_footer.html:8 templates/_footer.html.py:9
+msgid "School"
+msgstr "Escuela"
+
+#: templates/_footer.html:16
+msgid "What is P2PU?"
+msgstr "¿Qué es P2PU?"
+
+#: templates/_footer.html:17
+msgid ""
+"The Peer 2 Peer University is a grassroots open education project that "
+"organizes learning outside of institutional walls and gives learners "
+"recognition for their achievements. P2PU creates a model for lifelong "
+"learning alongside traditional formal higher education. Leveraging the "
+"internet and educational materials openly available online, P2PU enables "
+"high-quality low-cost education opportunities."
+msgstr ""
+"La Universidad Peer 2 Peer (Peer-to-Peer, De Igual a Igual) es un proyecto "
+"educativo con base social que organiza el aprendizaje fuera del marco "
+"institucional y da a quienes aprenden reconocimiento por sus logros. P2PU "
+"crea un modelo para aprender durante toda la vida que complementa los "
+"modelos tradicionales de educación superior formal. Al potencializar "
+"Internet y los materiales educativos en línea y abiertos, P2PU posibilita "
+"oportunidades educativas de alta calidad y bajo costo."
+
+#: templates/_footer.html:20
+msgid "Some of our supporters"
+msgstr "Algunos de nuestros patrocinadores"
+
+#: templates/_footer.html:23
+msgid "View all of our supporters"
+msgstr "Vea todos nuestros patrocinadores"
+
+#: templates/_footer.html:26
+msgid "Connect with us"
+msgstr "Conéctese con nosotros"
+
+#: templates/_footer.html:29
+msgid "Read our Blog"
+msgstr "Lea nuestro Blog"
+
+#: templates/_footer.html:30
+msgid "Find us on Facebook"
+msgstr "Encuéntrenos en Facebook"
+
+#: templates/_footer.html:31
+msgid "Follow us on Twitter"
+msgstr "Síganos en Facebook"
+
+#: templates/_footer.html:32
+msgid "Send us an email"
+msgstr "Envíenos un correo"
+
+#: templates/_footer.html:43 templates/base.html:67 templates/base.html.py:73
+msgid "Help"
+msgstr "Ayuda"
 
 #: templates/base.html:14
 msgid "Learning for everyone, by everyone, about almost anything."
@@ -1017,100 +1064,68 @@ msgstr "Aprendizaje para todos, por todos y acerca de casi todo."
 msgid "css/style-en.css"
 msgstr "css/style-es.css"
 
-#: templates/base.html:42
-msgid "(more)"
-msgstr "(más)"
-
-#: templates/base.html:45 templates/search/search.html:15
-msgid "Loading"
-msgstr "Cargando"
-
-#: templates/base.html:59
-msgid "BETA"
-msgstr "BETA"
-
-#: templates/base.html:62 templates/activity/base.html:16
+#: templates/base.html:42 templates/activity/base.html:16
 #: templates/projects/base.html:17 templates/projects/directory.html:4
-#: templates/projects/directory.html:12 templates/projects/gallery.html:4
-#: templates/projects/gallery.html.py:12
+#: templates/projects/directory.html:16 templates/projects/gallery.html:4
+#: templates/projects/gallery.html.py:16
 #: templates/projects/project_edit.html:25 templates/tags/directory.html:4
 #: templates/tags/directory.html.py:12
 msgid "Learn"
 msgstr "Aprender"
 
-#: templates/base.html:63 templates/activity/base.html:20
-#: templates/projects/project_user_list.html:7
-#: templates/projects/project_user_list.html:12
-#: templates/projects/sidebar.html:145
-#: templates/schools/school_edit_statistics.html:16
-#: templates/users/profile.html:18 templates/users/profile_edit.html:11
-#: templates/users/user_list.html:5 templates/users/user_list.html.py:10
-msgid "People"
-msgstr "Personas"
+#: templates/base.html:43
+msgid "Contribute"
+msgstr "Contribuir"
 
-#: templates/base.html:67
-msgid "Help"
-msgstr "Ayuda"
+#: templates/base.html:62
+msgid "My Profile"
+msgstr "Mi Perfil"
 
-#: templates/base.html:72
-msgid "Ask a Question"
-msgstr "Haga una Pregunta"
+#: templates/base.html:63
+msgid "My Settings"
+msgstr "Mis Preferencias"
 
-#: templates/base.html:73
-msgid "Handbook"
-msgstr "Manual"
-
-#: templates/base.html:89
-msgid "My P2PU"
-msgstr "Mi P2PU"
-
-#: templates/base.html:96 templates/dashboard/dashboard.html:17
-#: templates/drumbeatmail/inbox.html:9
-msgid "Dashboard"
-msgstr "Mi Página"
-
-#: templates/base.html:97 templates/users/profile_edit.html:22
-msgid "View Profile"
-msgstr "Ver Perfil"
-
-#: templates/base.html:98 templates/users/profile.html:24
-#: templates/users/profile_edit.html:5 templates/users/profile_edit.html:21
-msgid "Edit Profile"
-msgstr "Editar Perfil"
-
-#: templates/base.html:99 templates/chat/chat.html:4
-#: templates/chat/chat.html.py:10 templates/projects/sidebar.html:113
-msgid "Chat"
-msgstr "Chat"
-
-#: templates/base.html:100 templates/drumbeatmail/inbox.html:4
-#: templates/drumbeatmail/inbox.html:11 templates/drumbeatmail/inbox.html:20
-msgid "Inbox"
-msgstr "Bandeja de Entrada"
-
-#: templates/base.html:101
+#: templates/base.html:64
 msgid "Logout"
 msgstr "Salir"
 
-#: templates/base.html:107
+#: templates/base.html:72
 msgid "Login"
 msgstr "Entrar"
 
-#: templates/base.html:117
+#: templates/base.html:79 templates/search/search.html:15
+msgid "Loading"
+msgstr "Cargando"
+
+#: templates/base.html:99 templates/dashboard/splash.html:18
+msgid "Learn anything, with your peers."
+msgstr "Aprenda cualquier cosa, con sus colegas."
+
+#: templates/base.html:100 templates/dashboard/splash.html:20
+msgid ""
+"At P2PU, people work together to learn a particular topic by completing "
+"tasks, assessing individual and group work, and providing constructive "
+"feedback."
+msgstr ""
+"En P2PU, la gente trabaja unida para aprender sobre un tema particular "
+"completando tareas, evaluando el trabajo individual y colectivo, y brindando "
+"retroalimentación constructiva."
+
+#: templates/base.html:108
 msgid "Home"
 msgstr "Inicio"
 
-#: templates/base.html:159 templates/drumbeatmail/base.html:52
+#: templates/base.html:151 templates/drumbeatmail/base.html:52
 #: templates/projects/contact_organizers.html:49
 #: templates/users/profile_form_base.html:76
 msgid "en"
 msgstr "es"
 
-#: templates/base.html:178
+#: templates/base.html:170
 msgid "jquery.ui.datepicker-en.js"
 msgstr "jquery.ui.datepicker-es.js"
 
-#: templates/base.html:180
+#: templates/base.html:172
 msgid "js/script-en.js"
 msgstr "js/script-es.js"
 
@@ -1118,10 +1133,11 @@ msgstr "js/script-es.js"
 #: templates/content/page.html:34 templates/drumbeat/report_abuse.html:10
 #: templates/drumbeat/report_received.html:10
 #: templates/drumbeatmail/inbox.html:49 templates/drumbeatmail/inbox.html:96
-#: templates/projects/sidebar.html:61
+#: templates/projects/sidebar-original.html:186
+#: templates/projects/sidebar.html:69
 #: templates/replies/_comment_threads.html:27
 #: templates/replies/_comment_threads.html:56
-#: templates/signups/sign_up.html:66 templates/users/sidebar.html:82
+#: templates/signups/sign_up.html:66 templates/users/sidebar.html:87
 msgid "Report Abuse"
 msgstr "Reportar Abuso"
 
@@ -1134,7 +1150,6 @@ msgstr "Reportar Abuso"
 #: templates/replies/_comment_threads.html:24
 #: templates/replies/_comment_threads.html:53
 #: templates/replies/delete_restore_comment.html:38
-#: templates/schools/school_edit_declined.html:38
 #: templates/schools/school_edit_featured.html:38
 #: templates/schools/school_edit_membership.html:38
 #: templates/signups/delete_restore_answer.html:35
@@ -1171,6 +1186,16 @@ msgstr[1] ""
 msgid "Activity"
 msgstr "Actividad"
 
+#: templates/activity/base.html:20 templates/projects/project_user_list.html:7
+#: templates/projects/project_user_list.html:12
+#: templates/projects/sidebar-original.html:132
+#: templates/projects/sidebar.html:42
+#: templates/schools/school_edit_statistics.html:16
+#: templates/users/profile.html:18 templates/users/profile_edit.html:11
+#: templates/users/user_list.html:5 templates/users/user_list.html.py:10
+msgid "People"
+msgstr "Personas"
+
 #: templates/activity/delete_restore.html:8
 msgid "Restore Activity"
 msgstr "Restaurar Actividad"
@@ -1191,14 +1216,13 @@ msgstr "¿Está seguro que desea borrar esta actividad?"
 #: templates/content/confirm_delete_page.html:27
 #: templates/content/create_page.html:36 templates/content/edit_page.html:45
 #: templates/content/restore_version.html:42
-#: templates/dashboard/dashboard.html:43
 #: templates/drumbeat/report_abuse.html:16 templates/drumbeatmail/base.html:38
 #: templates/projects/contact_organizers.html:34
-#: templates/projects/project.html:62 templates/projects/project_clone.html:21
+#: templates/projects/project_clone.html:21
 #: templates/projects/project_edit_image.html:24
 #: templates/projects/project_edit_status.html:53
-#: templates/projects/project_edit_summary.html:52
-#: templates/projects/project_edit_summary.html:55
+#: templates/projects/project_edit_summary.html:48
+#: templates/projects/project_edit_summary.html:51
 #: templates/projects/project_import.html:21
 #: templates/replies/comment_page.html:91
 #: templates/replies/delete_restore_comment.html:33
@@ -1206,7 +1230,7 @@ msgstr "¿Está seguro que desea borrar esta actividad?"
 #: templates/schools/school_edit_groups_icon.html:23
 #: templates/schools/school_edit_logo.html:23
 #: templates/schools/school_edit_site_logo.html:23
-#: templates/schools/school_edit_styles.html:73
+#: templates/schools/school_edit_styles.html:89
 #: templates/schools/school_edit_summary.html:22
 #: templates/signups/answer_sign_up.html:91
 #: templates/signups/delete_restore_answer.html:30
@@ -1263,7 +1287,7 @@ msgstr ""
 "target=\"_blank\">página sobre evaluaciones e insignias</a>."
 
 #: templates/badges/profile_badges_manage.html:17
-#: templates/users/sidebar.html:145
+#: templates/users/sidebar.html:150
 msgid "Badges"
 msgstr "Insignias"
 
@@ -1288,6 +1312,12 @@ msgstr ""
 "Las insignias fueron enviadas exitosamente! Ahora puede verlas en <a href="
 "\"%(obi_url)s\" target=\"_blank\">%(obi_url)s</a>. Asegúrese de utilizar la "
 "dirección de correo <strong>%(email)s</strong> cuando entre a ese sitio."
+
+#: templates/chat/chat.html:4 templates/chat/chat.html.py:10
+#: templates/projects/sidebar-original.html:100
+#: templates/users/sidebar.html:11
+msgid "Chat"
+msgstr "Chat"
 
 #: templates/content/base_page_form.html:24
 msgid "Title"
@@ -1348,9 +1378,9 @@ msgstr ""
 "una empresa en la que todos trabajen durante un mes."
 
 #: templates/content/create_page.html:38 templates/projects/directory.html:22
-#: templates/projects/gallery.html:17 templates/projects/project_edit.html:6
+#: templates/projects/gallery.html:21 templates/projects/project_edit.html:6
 #: templates/projects/project_edit.html:40
-#: templates/projects/project_edit_summary.html:56
+#: templates/projects/project_edit_summary.html:52
 #: templates/projects/project_import.html:22 templates/tags/directory.html:22
 msgid "Create"
 msgstr "Crear"
@@ -1359,7 +1389,8 @@ msgstr "Crear"
 #: templates/projects/project_edit.html:6
 #: templates/projects/project_edit.html:37
 #: templates/projects/project_edit_links.html:35
-#: templates/projects/sidebar.html:57
+#: templates/projects/sidebar-original.html:182
+#: templates/projects/sidebar.html:65
 #: templates/replies/_comment_threads.html:25
 #: templates/replies/_comment_threads.html:54
 #: templates/signups/sign_up.html:64
@@ -1375,9 +1406,9 @@ msgstr "Actualización menor (no se publica en el muro)."
 #: templates/content/edit_page.html:47
 #: templates/dashboard/setup_profile.html:9
 #: templates/projects/project_edit_status.html:54
-#: templates/projects/project_edit_summary.html:53
+#: templates/projects/project_edit_summary.html:49
 #: templates/replies/comment_page.html:94
-#: templates/schools/school_edit_styles.html:74
+#: templates/schools/school_edit_styles.html:90
 #: templates/schools/school_edit_summary.html:23
 #: templates/signups/answer_sign_up.html:96
 #: templates/signups/edit_signup.html:32
@@ -1479,16 +1510,20 @@ msgstr "Actividad de mi perfil"
 msgid "Activity from your dashboard"
 msgstr "Actividad que estoy siguiendo"
 
-#: templates/dashboard/dashboard.html:28
+#: templates/dashboard/dashboard.html:17 templates/drumbeatmail/inbox.html:9
+msgid "Dashboard"
+msgstr "Mi Página"
+
+#: templates/dashboard/dashboard.html:29
 #: templates/users/emails/registration_confirm.txt:2
 msgid "Welcome to P2PU!"
 msgstr "¡Bienvenido a P2PU!"
 
-#: templates/dashboard/dashboard.html:29
+#: templates/dashboard/dashboard.html:30
 msgid "To get started, you should "
 msgstr "Para comenzar debería "
 
-#: templates/dashboard/dashboard.html:29
+#: templates/dashboard/dashboard.html:30
 msgid ""
 "update your profile</a>. This is a great way to tell people a bit more about "
 "yourself. Then find "
@@ -1496,30 +1531,22 @@ msgstr ""
 "actualizar su perfil</a>. Esta es una buena forma de decirle a otros un poco "
 "más acerca de usted. Después busque "
 
-#: templates/dashboard/dashboard.html:29
+#: templates/dashboard/dashboard.html:30
 msgid "people</a> and "
 msgstr "personas</a> y "
 
-#: templates/dashboard/dashboard.html:29
+#: templates/dashboard/dashboard.html:30
 msgid "groups</a> that interest you and start following them! You can also "
 msgstr ""
 "grupos</a> que sean de su interés y ¡comience a seguirlos! También puede "
 
-#: templates/dashboard/dashboard.html:29
+#: templates/dashboard/dashboard.html:30
 msgid "create new groups</a> and update how often P2PU "
 msgstr "crear nuevos grupos</a> y actualizar la frecuencia con la que P2PU "
 
-#: templates/dashboard/dashboard.html:29
+#: templates/dashboard/dashboard.html:30
 msgid "contacts you</a>."
 msgstr "lo contacta</a>."
-
-#: templates/dashboard/dashboard.html:36
-msgid "Post a message to your followers"
-msgstr "Publicar un mensaje para sus seguidores"
-
-#: templates/dashboard/dashboard.html:45 templates/projects/project.html:64
-msgid "Post Update"
-msgstr "Publicar"
 
 #: templates/dashboard/setup_profile.html:5
 #: templates/dashboard/setup_profile.html:7
@@ -1530,57 +1557,21 @@ msgstr "Crear Perfil"
 msgid "Learning for everyone, by everyone, about almost anything"
 msgstr "Aprendizaje para todos, por todos y acerca de casi todo"
 
-#: templates/dashboard/splash.html:18
-msgid "Browse Groups & Courses"
-msgstr "Busque Grupos y Cursos"
+#: templates/dashboard/splash.html:21
+msgid "Join the Community"
+msgstr "Únete a la Comunidad"
 
-#: templates/dashboard/splash.html:19
-msgid "Start Your Own"
-msgstr "Inicie el Suyo Propio"
+#: templates/dashboard/splash.html:21
+msgid "It's free!"
+msgstr "Es Gratis!"
 
-#: templates/dashboard/splash.html:22
-msgid ""
-"<em class=\"highlight3\">Learn</em> anything<br>with your <em class="
-"\"highlight2\">peers</em>.<br><span class=\"sub\">It's <em class="
-"\"highlight2\">online</em> and totally <em class=\"highlight3\">free</em></"
-"span>."
-msgstr ""
-"<em class=\"highlight3\">Aprenda</em> cualquier cosa<br>con sus <em class="
-"\"highlight2\">colegas</em>.<br><span class=\"sub\">Es <em class="
-"\"highlight2\">en línea</em> y totalmente <em class=\"highlight3\">gratis</"
-"em></span>."
+#: templates/dashboard/splash.html:23
+msgid "As featured in"
+msgstr "Como aparece en"
 
-#: templates/dashboard/splash.html:24
-msgid "At"
-msgstr "En"
-
-#: templates/dashboard/splash.html:24
-msgid ""
-"people work together to learn a particular topic by completing tasks, "
-"assessing individual and group work, and providing constructive feedback."
-msgstr ""
-"la gente trabaja unida para aprender sobre un tema particular completando "
-"tareas, evaluando el trabajo individual y colectivo y brindando "
-"retroalimentación constructiva."
-
-#: templates/dashboard/splash.html:37 templates/projects/_project_list.html:5
-#: templates/schools/school_edit.html:23
-#: templates/schools/school_edit_featured.html:7
-#: templates/users/user_list.html:30
-msgid "Featured"
-msgstr "Destacado"
-
-#: templates/dashboard/splash.html:47
-msgid "P2PU Blog"
-msgstr "Blog de P2PU"
-
-#: templates/dashboard/splash.html:47
-msgid "Subscribe to the Peer 2 Peer University blog"
-msgstr "Suscribirse al blog de Peer 2 Peer University"
-
-#: templates/dashboard/splash.html:47
-msgid "feed"
-msgstr "alimentador"
+#: templates/dashboard/splash.html:39
+msgid "Featured Courses"
+msgstr "Cursos Destacados"
 
 #: templates/drumbeat/report_abuse.html:5
 #: templates/drumbeat/report_received.html:5
@@ -1641,6 +1632,11 @@ msgstr "Componer Mensaje"
 #: templates/drumbeatmail/compose.html:6
 msgid "New Private Message"
 msgstr "Nuevo Mensaje Privado"
+
+#: templates/drumbeatmail/inbox.html:4 templates/drumbeatmail/inbox.html:11
+#: templates/drumbeatmail/inbox.html:20 templates/users/sidebar.html:12
+msgid "Inbox"
+msgstr "Bandeja de Entrada"
 
 #: templates/drumbeatmail/inbox.html:14
 msgid "New Private Discussion"
@@ -1717,7 +1713,8 @@ msgid "next"
 msgstr "siguiente"
 
 #: templates/projects/_project_card.html:23
-#: templates/projects/sidebar.html:117 templates/users/_user_card.html:20
+#: templates/projects/sidebar-original.html:104
+#: templates/users/_user_card.html:20
 msgid "Updates"
 msgstr "Actualizaciones"
 
@@ -1725,18 +1722,25 @@ msgstr "Actualizaciones"
 #: templates/projects/project_edit.html:49
 #: templates/projects/project_edit_participants.html:7
 #: templates/projects/project_user_list.html:34
-#: templates/projects/sidebar.html:125
+#: templates/projects/sidebar-original.html:112
 #: templates/schools/school_edit_statistics.html:19
 msgid "Participants"
 msgstr "Participantes"
 
 #: templates/projects/_project_card.html:31
 #: templates/projects/project_user_list.html:52
-#: templates/projects/sidebar.html:129
+#: templates/projects/sidebar-original.html:116
 #: templates/schools/school_edit_statistics.html:20
-#: templates/users/_user_card.html:12 templates/users/sidebar.html:91
+#: templates/users/_user_card.html:12 templates/users/sidebar.html:96
 msgid "Followers"
 msgstr "Seguidores"
+
+#: templates/projects/_project_list.html:5
+#: templates/schools/school_edit.html:23
+#: templates/schools/school_edit_featured.html:7
+#: templates/users/user_list.html:30
+msgid "Featured"
+msgstr "Destacado"
 
 #: templates/projects/_project_list.html:16
 msgid "Open for Sign-Up"
@@ -1754,15 +1758,17 @@ msgstr "Popular"
 msgid "New"
 msgstr "Nuevo"
 
-#: templates/projects/_project_list.html:60 templates/projects/sidebar.html:81
+#: templates/projects/_project_list.html:60
+#: templates/projects/sidebar-original.html:68
 msgid "Under Development"
 msgstr "En Desarrollo"
 
-#: templates/projects/_project_list.html:71 templates/projects/sidebar.html:78
+#: templates/projects/_project_list.html:71
+#: templates/projects/sidebar-original.html:65
 msgid "Archived"
 msgstr "Archivado"
 
-#: templates/projects/_project_list.html:80 templates/projects/gallery.html:15
+#: templates/projects/_project_list.html:80 templates/projects/gallery.html:19
 msgid "View All"
 msgstr "Ver Todos"
 
@@ -1825,13 +1831,13 @@ msgstr ""
 "creación de tareas y en valorar las contribuciones de otros?¿En que "
 "consistirá la tarea final?"
 
-#: templates/projects/directory.html:18 templates/projects/directory.html:29
+#: templates/projects/directory.html:18 templates/projects/directory.html:30
 #: templates/tags/directory.html:18
 msgid "All"
 msgstr "Todos"
 
-#: templates/projects/directory.html:27 templates/projects/gallery.html:23
-#: templates/schools/home.html:14 templates/tags/directory.html:27
+#: templates/projects/directory.html:28 templates/projects/gallery.html:27
+#: templates/schools/home.html:16 templates/tags/directory.html:27
 msgid "Browse"
 msgstr "Navegar"
 
@@ -1849,52 +1855,10 @@ msgstr "Objetivos de Aprendizaje"
 msgid "Prerequisites"
 msgstr "Prerequisitos"
 
-#: templates/projects/imported_detailed_description.html:21
-msgid "Sign-Up Task"
-msgstr "Tarea de Inscripción"
-
 #: templates/projects/project.html:23
 #: templates/projects/project_task_list.html:21
-#: templates/projects/sidebar.html:169
 msgid "Tasks"
 msgstr "Tareas"
-
-#: templates/projects/project.html:28 templates/projects/project_edit.html:38
-#: templates/projects/project_task_list.html:29
-msgid "View"
-msgstr "Vista"
-
-#: templates/projects/project.html:32
-msgid "Displaying"
-msgstr "Presentando"
-
-#: templates/projects/project.html:32
-msgid "of"
-msgstr "de"
-
-#: templates/projects/project.html:32
-msgid "total tasks"
-msgstr "total de tareas"
-
-#: templates/projects/project.html:32
-msgid "See All Tasks"
-msgstr "Ver Todas las Tareas"
-
-#: templates/projects/project.html:37
-msgid "Activity Wall"
-msgstr "Muro de Actividades"
-
-#: templates/projects/project.html:44
-msgid "Post a message"
-msgstr "Publicar un mensajes"
-
-#: templates/projects/project.html:49
-msgid ""
-"Important message (participants can not turn off notifications for important "
-"messages)."
-msgstr ""
-"Mensaje importante (los participantes no pueden desactivar notificación de "
-"mensajes importantes)."
 
 #: templates/projects/project_clone.html:9
 #: templates/projects/project_edit.html:55
@@ -1910,7 +1874,6 @@ msgstr ""
 "que si comienza a teclear va a poder ver la lista de sugerencias que machean."
 
 #: templates/projects/project_clone.html:15
-#: templates/schools/school_edit_declined.html:13
 #: templates/schools/school_edit_featured.html:13
 #: templates/schools/school_edit_membership.html:13
 msgid "Short Name"
@@ -1919,6 +1882,10 @@ msgstr "Nombre Corto"
 #: templates/projects/project_clone.html:22
 msgid "Clone"
 msgstr "Clonar"
+
+#: templates/projects/project_edit.html:38
+msgid "View"
+msgstr "Vista"
 
 #: templates/projects/project_edit.html:46
 msgid "Image"
@@ -1929,7 +1896,8 @@ msgstr "Imagen"
 msgid "Status &amp; Dates"
 msgstr "Estado y Fechas"
 
-#: templates/projects/project_edit.html:48 templates/projects/sidebar.html:109
+#: templates/projects/project_edit.html:48
+#: templates/projects/sidebar-original.html:96
 msgid "Signup"
 msgstr "Inscripción"
 
@@ -1995,7 +1963,6 @@ msgstr ""
 
 #: templates/projects/project_edit_links.html:7
 #: templates/projects/project_edit_participants.html:22
-#: templates/schools/school_edit_declined.html:19
 #: templates/schools/school_edit_featured.html:19
 #: templates/schools/school_edit_membership.html:19
 #: templates/schools/school_edit_organizers.html:19
@@ -2007,7 +1974,6 @@ msgstr "Añadir"
 #: templates/projects/project_edit_links_base.html:13
 #: templates/projects/project_edit_participants.html:30
 #: templates/projects/project_edit_summary.html:12
-#: templates/schools/school_edit_declined.html:27
 #: templates/schools/school_edit_featured.html:27
 #: templates/schools/school_edit_membership.html:27
 #: templates/schools/school_edit_organizers.html:27
@@ -2030,7 +1996,6 @@ msgstr "Suscrito"
 
 #: templates/projects/project_edit_links.html:17
 #: templates/projects/project_edit_participants.html:32
-#: templates/schools/school_edit_declined.html:28
 #: templates/schools/school_edit_featured.html:28
 #: templates/schools/school_edit_membership.html:28
 #: templates/users/profile_edit_links.html:38
@@ -2161,41 +2126,19 @@ msgid "Active from"
 msgstr "Activo desde el"
 
 #: templates/projects/project_edit_status.html:45
-#: templates/projects/sidebar.html:89
+#: templates/projects/sidebar-original.html:76
 msgid "to"
 msgstr "hasta el"
 
-#: templates/projects/project_edit_summary.html:13
-msgid ""
-"A good name is short and descriptive. People should know what your study "
-"group, course, ... is about without reading the description."
-msgstr ""
-"Un buen nombre es corto y descriptivo. La gente debería saber sobre que es "
-"su grupo de estudio, curso, ... sin leer la descripción."
-
-#: templates/projects/project_edit_summary.html:18
+#: templates/projects/project_edit_summary.html:17
 msgid "One sentence description"
 msgstr "Descripción de una línea"
 
-#: templates/projects/project_edit_summary.html:19
-msgid "This description will be used on search results and listing pages."
-msgstr ""
-"Esta descripción se usará en resultados de búsquedas y en páginas con "
-"listados."
-
-#: templates/projects/project_edit_summary.html:24
+#: templates/projects/project_edit_summary.html:22
 msgid "One paragraph description"
 msgstr "Un párrafo de descripción"
 
-#: templates/projects/project_edit_summary.html:25
-msgid ""
-"This description is shown on home page of the study group, course, ... It "
-"can go into a bit more detail, but it should be brief and to the point."
-msgstr ""
-"Esta descripción se muestra en la página del grupo de estudio, curso, ...  "
-"Puede ser más detallada, pero debe ser breve e ir al grano."
-
-#: templates/projects/project_edit_summary.html:31
+#: templates/projects/project_edit_summary.html:28
 msgid ""
 "Please describe this study group, course, ... by providing a comma-separated "
 "list of tags."
@@ -2203,24 +2146,16 @@ msgstr ""
 "Por favor, describa este grupo de estudio, curso, ... mediante una lista de "
 "etiquetas separadas por comas."
 
-#: templates/projects/project_edit_summary.html:36
-#: templates/projects/sidebar.html:105
+#: templates/projects/project_edit_summary.html:33
+#: templates/projects/sidebar-original.html:92
 msgid "Kind"
 msgstr "Tipo"
 
-#: templates/projects/project_edit_summary.html:37
-msgid ""
-"Select if you are creating a study group, a course, or other kind of "
-"learning project."
-msgstr ""
-"Indique si esta creando un grupo de estudio, un curso, u otro tipo de "
-"proyecto de aprendizaje."
-
-#: templates/projects/project_edit_summary.html:40
+#: templates/projects/project_edit_summary.html:36
 msgid "Term"
 msgstr "Término"
 
-#: templates/projects/project_edit_summary.html:44
+#: templates/projects/project_edit_summary.html:40
 #: templates/schools/school_edit_summary.html:16
 msgid "Description"
 msgstr "Descripción"
@@ -2241,82 +2176,80 @@ msgstr "Curso"
 msgid "Import"
 msgstr "Importar"
 
-#: templates/projects/project_task_list.html:35
-#: templates/projects/sidebar.html:188
+#: templates/projects/project_task_list.html:34
 msgid "No tasks have been added."
 msgstr "Ninguna tarea ha sido añadida."
 
 #: templates/projects/project_user_list.html:22
-#: templates/projects/sidebar.html:121
+#: templates/projects/sidebar-original.html:108
 #: templates/schools/school_edit_statistics.html:18
 msgid "Organizers"
 msgstr "Organizadores"
 
-#: templates/projects/sidebar.html:19 templates/users/sidebar.html:16
+#: templates/projects/sidebar-original.html:19
+#: templates/projects/sidebar.html:25 templates/users/sidebar.html:21
 msgid "Unfollow"
 msgstr "Dejar de Seguir"
 
-#: templates/projects/sidebar.html:24 templates/users/sidebar.html:21
+#: templates/projects/sidebar-original.html:24
+#: templates/projects/sidebar.html:30 templates/users/sidebar.html:26
 msgid "Follow"
 msgstr "Seguir"
 
-#: templates/projects/sidebar.html:29
-msgid "Participate"
-msgstr "Participar"
+#: templates/projects/sidebar-original.html:29
+#: templates/projects/sidebar.html:35
+msgid "Enroll"
+msgstr "Matricular"
 
-#: templates/projects/sidebar.html:45
+#: templates/projects/sidebar-original.html:45
 msgid "View more tagged with "
 msgstr "Vea otros etiquetados como "
 
-#: templates/projects/sidebar.html:54
-msgid "View Full Description"
-msgstr "Ver Descripción Completa"
-
-#: templates/projects/sidebar.html:84
+#: templates/projects/sidebar-original.html:71
 msgid "Not Listed"
 msgstr "No Listado"
 
-#: templates/projects/sidebar.html:86
+#: templates/projects/sidebar-original.html:73
 msgid "DATE_FORMAT"
 msgstr "j N Y"
 
-#: templates/projects/sidebar.html:88
+#: templates/projects/sidebar-original.html:75
 msgid "Runs"
 msgstr "Activo del"
 
-#: templates/projects/sidebar.html:94 templates/projects/sidebar.html:100
+#: templates/projects/sidebar-original.html:81
+#: templates/projects/sidebar-original.html:87
 msgid "Based on"
 msgstr "Basado en"
 
-#: templates/projects/sidebar.html:134
+#: templates/projects/sidebar-original.html:121
 msgid "Pending Applicants"
 msgstr "Aspirantes Pendientes:"
 
-#: templates/projects/sidebar.html:144
+#: templates/projects/sidebar-original.html:131
+#: templates/projects/sidebar.html:41
 msgid "See All"
 msgstr "Ver Todos"
 
-#: templates/projects/sidebar.html:160
+#: templates/projects/sidebar-original.html:147
+#: templates/projects/sidebar.html:57
 msgid "Edit Participants"
 msgstr "Editar Participantes"
 
-#: templates/projects/sidebar.html:162
+#: templates/projects/sidebar-original.html:149
+#: templates/projects/sidebar.html:59
 msgid "Contact Organizer"
 msgstr "Contactar Organizador"
 
-#: templates/projects/sidebar.html:193
-msgid "New Task"
-msgstr "Nueva Tarea"
-
-#: templates/projects/sidebar.html:199
+#: templates/projects/sidebar-original.html:154
 msgid "External Links"
 msgstr "Enlaces Externos"
 
-#: templates/projects/sidebar.html:217
+#: templates/projects/sidebar-original.html:172
 msgid "No external links have been added."
 msgstr "Ningún enlace externo ha sido añadido."
 
-#: templates/projects/sidebar.html:222
+#: templates/projects/sidebar-original.html:177
 msgid "Edit Links"
 msgstr "Editar Enlaces"
 
@@ -2403,7 +2336,7 @@ msgstr "Biografía:"
 #: templates/relationships/emails/new_follower.txt:6
 #: templates/signups/answer_sign_up.html:28 templates/signups/sign_up.html:80
 #: templates/signups/emails/new_signup_answer.txt:6
-#: templates/users/sidebar.html:38
+#: templates/users/sidebar.html:43
 msgid "Location:"
 msgstr "Ubicación:"
 
@@ -2488,12 +2421,12 @@ msgstr ""
 "No se encontro ningún fichero. Suba un fichero usando la pestaña 'Cargar' "
 "del dialogo 'Insertar Vínculo'."
 
-#: templates/schools/home.html:12 templates/schools/school_edit.html:4
+#: templates/schools/home.html:14 templates/schools/school_edit.html:4
 #: templates/schools/school_edit.html:11
 msgid "Edit School"
 msgstr "Editar Escuela"
 
-#: templates/schools/home.html:32 templates/schools/school_edit.html:22
+#: templates/schools/home.html:36 templates/schools/school_edit.html:22
 #: templates/schools/school_edit_organizers.html:7
 msgid "School Organizers"
 msgstr "Organizadores de Escuela"
@@ -2507,8 +2440,8 @@ msgid "View School"
 msgstr "Ver Escuela"
 
 #: templates/schools/school_edit.html:17
-msgid "Styles"
-msgstr "Estilos"
+msgid "Appearance"
+msgstr "Apariencia"
 
 #: templates/schools/school_edit.html:18
 msgid "Logo"
@@ -2551,17 +2484,6 @@ msgid ""
 msgstr ""
 "Tipos de archivos: JPG, GIF o PNG unicamente<br/> Tamaño máximo: 700k <br/> "
 "Dimensiones: 20x60 pixels"
-
-#: templates/schools/school_edit_declined.html:7
-msgid "Declined"
-msgstr "Rechazado"
-
-#: templates/schools/school_edit_declined.html:8
-msgid ""
-"View, add and remove declined study groups, courses, ... to this school."
-msgstr ""
-"Ver, añadir y retirar grupos de escuela, cursos, ... rechazados por esta "
-"escuela."
 
 #: templates/schools/school_edit_featured.html:8
 msgid ""
@@ -2702,30 +2624,62 @@ msgstr ""
 "Comentarios en las páginas de inscripción. Incluye los comentarios "
 "automáticos de bienvenida."
 
-#: templates/schools/school_edit_styles.html:11
+#: templates/schools/school_edit_styles.html:9
+msgid "Sidebar"
+msgstr "Barra Lateral"
+
+#: templates/schools/school_edit_styles.html:13
+msgid "Show School Organizers."
+msgstr "Muestre los Organizadores de Escuela"
+
+#: templates/schools/school_edit_styles.html:15
+msgid ""
+"Hide the list of school organizers if you don't want it to appear on the "
+"school home page sidebar."
+msgstr ""
+"Oculte la lista de organizadores de la escuela si no desea que estos "
+"aparezcan en la barra lateral de la página principal de la escuela."
+
+#: templates/schools/school_edit_styles.html:19
+msgid "Width"
+msgstr "Ancho"
+
+#: templates/schools/school_edit_styles.html:20
+msgid ""
+"Update this value so the school logo fits nicelly on the school home page "
+"sidebar."
+msgstr ""
+"Actualize este valor para que el logo de la escuela se vea bien en la barra "
+"lateral de la página principal de la escuela."
+
+#: templates/schools/school_edit_styles.html:24
+msgid "Colors"
+msgstr "Colores"
+
+#: templates/schools/school_edit_styles.html:27
 msgid "Headers Color"
 msgstr "Color de las Cabeceras"
 
-#: templates/schools/school_edit_styles.html:12
+#: templates/schools/school_edit_styles.html:28
 msgid ""
 "This color will be used for the headers of pages associated with this school."
 msgstr ""
 "Este color será usado para los encabezados de páginas asociadas con esta "
 "escuela."
 
-#: templates/schools/school_edit_styles.html:18
+#: templates/schools/school_edit_styles.html:34
 msgid "Lighter Headers Color"
 msgstr "Color de las Cabeceras (Claro)"
 
-#: templates/schools/school_edit_styles.html:19
+#: templates/schools/school_edit_styles.html:35
 msgid "Lighter variant of the headers color."
 msgstr "Variante más clara del color de las cabeceras."
 
-#: templates/schools/school_edit_styles.html:25
+#: templates/schools/school_edit_styles.html:41
 msgid "Background Color"
 msgstr "Color de Fondo"
 
-#: templates/schools/school_edit_styles.html:26
+#: templates/schools/school_edit_styles.html:42
 msgid ""
 "This color will be used as background for the non-striped sections of the "
 "pages associated with this school."
@@ -2733,11 +2687,11 @@ msgstr ""
 "Este color será usado como fondo de las secciones no rayadas en las páginas "
 "asociadas con esta escuela."
 
-#: templates/schools/school_edit_styles.html:32
+#: templates/schools/school_edit_styles.html:48
 msgid "Menus Color"
 msgstr "Color de los Menús"
 
-#: templates/schools/school_edit_styles.html:33
+#: templates/schools/school_edit_styles.html:49
 msgid ""
 "This color will be used as background for the menus of the pages associated "
 "with this school."
@@ -2745,49 +2699,47 @@ msgstr ""
 "Este color será usado como fondo de los menús en las páginas asociadas con "
 "esta escuela."
 
-#: templates/schools/school_edit_styles.html:39
+#: templates/schools/school_edit_styles.html:55
 msgid "Lighter Menus Color"
 msgstr "Color de los Menús (Claro)"
 
-#: templates/schools/school_edit_styles.html:40
+#: templates/schools/school_edit_styles.html:56
 msgid "Lighter variant of the menus color."
 msgstr "Variante más clara del color de los menús."
 
-#: templates/schools/school_edit_styles.html:46
+#: templates/schools/school_edit_styles.html:62
 msgid "About Us Footnote Color"
 msgstr "Color del Pie de Página \"Acerca de Nosotros\""
 
-#: templates/schools/school_edit_styles.html:47
+#: templates/schools/school_edit_styles.html:63
 msgid "Background color of the About Us footnotes."
 msgstr "Color de fondo del pie de página \"Acerca de Nosotros\"."
 
-#: templates/schools/school_edit_styles.html:53
+#: templates/schools/school_edit_styles.html:69
 msgid "Contact Us Footnote Color"
 msgstr "Color del Pie de Página \"Contáctenos\""
 
-#: templates/schools/school_edit_styles.html:54
+#: templates/schools/school_edit_styles.html:70
 msgid "Background color of the Contact Us footnotes."
 msgstr "Color de fondo del pie de página \"Contáctenos\"."
 
-#: templates/schools/school_edit_styles.html:60
+#: templates/schools/school_edit_styles.html:76
 msgid "License Info Footnote Color"
 msgstr "Color del Pie de Página \"Información de Licencia\""
 
-#: templates/schools/school_edit_styles.html:61
+#: templates/schools/school_edit_styles.html:77
 msgid "Background color of the License Info footnotes."
 msgstr "Color de fondo del pie de página \"Información de Licencia\"."
 
-#: templates/schools/school_edit_styles.html:67
-msgid "Sidebar Width"
-msgstr "Ancho de la Barra Lateral"
+#: templates/schools/school_edit_styles.html:83
+msgid "Custom Styles (Advanced)"
+msgstr "Estilos Personalizados (Avanzado)"
 
-#: templates/schools/school_edit_styles.html:68
-msgid ""
-"You should update this value so the school logo fits nicelly on the school "
-"home page sidebar."
+#: templates/schools/school_edit_styles.html:84
+msgid "Customize CSS styles for the school home page and groups."
 msgstr ""
-"Debe actualizar este valor para que el logo de la escuela se vea bien en la "
-"barra lateral de la página principal de la escuela."
+"Personalize los estilos CSS para la página principal de la escuela y sus "
+"grupos."
 
 #: templates/schools/school_edit_summary.html:11
 msgid ""
@@ -3086,7 +3038,7 @@ msgstr "Hábil en"
 msgid "Interested in"
 msgstr "Interesado en"
 
-#: templates/users/_profile_edit.html:33 templates/users/sidebar.html:68
+#: templates/users/_profile_edit.html:33 templates/users/sidebar.html:73
 msgid "Want to learn more about"
 msgstr "Quiero aprender más sobre"
 
@@ -3116,7 +3068,7 @@ msgstr ""
 "Tipos de archivos: JPG, GIF o PNG unicamente<br/> Tamaño máximo: 700k <br/> "
 "Dimensiones: 57x57 pixels"
 
-#: templates/users/_user_card.html:16 templates/users/sidebar.html:101
+#: templates/users/_user_card.html:16 templates/users/sidebar.html:106
 msgid "Following"
 msgstr "Siguiendo"
 
@@ -3196,6 +3148,15 @@ msgstr "Actividad del pérfil del usuario"
 #: templates/users/profile.html:11
 msgid "Activity from user's dashboard"
 msgstr "Actividad que el usuario está siguiendo"
+
+#: templates/users/profile_edit.html:5 templates/users/profile_edit.html:21
+#: templates/users/sidebar.html:13
+msgid "Edit Profile"
+msgstr "Editar Perfil"
+
+#: templates/users/profile_edit.html:22
+msgid "View Profile"
+msgstr "Ver Perfil"
 
 #: templates/users/profile_edit.html:26
 #: templates/users/profile_edit_main.html:8
@@ -3423,43 +3384,43 @@ msgstr "El contenido (e.g. tareas, comentarios, ...) de "
 msgid " is updated."
 msgstr " sea actualizado."
 
-#: templates/users/sidebar.html:24
+#: templates/users/sidebar.html:29
 msgid "Private Message"
 msgstr "Mensaje Privado"
 
-#: templates/users/sidebar.html:44
+#: templates/users/sidebar.html:49
 msgid "Skills"
 msgstr "Habilidades"
 
-#: templates/users/sidebar.html:48
+#: templates/users/sidebar.html:53
 msgid "View more with skills in "
 msgstr "Ver más habilidades en "
 
-#: templates/users/sidebar.html:56
+#: templates/users/sidebar.html:61
 msgid "Interests"
 msgstr "Intereses"
 
-#: templates/users/sidebar.html:60
+#: templates/users/sidebar.html:65
 msgid "View more interested in "
 msgstr "Ver más intereses en "
 
-#: templates/users/sidebar.html:72
+#: templates/users/sidebar.html:77
 msgid "View more interested in learning more about "
 msgstr "Ver más sobre que está interesado en aprender "
 
-#: templates/users/sidebar.html:112
+#: templates/users/sidebar.html:117
 msgid "Learning"
 msgstr "Aprendiendo"
 
-#: templates/users/sidebar.html:126
+#: templates/users/sidebar.html:131
 msgid "Past Involvement"
 msgstr "Participación Anterior"
 
-#: templates/users/sidebar.html:166
+#: templates/users/sidebar.html:171
 msgid "(UP)"
 msgstr "(ARRIBA)"
 
-#: templates/users/sidebar.html:169
+#: templates/users/sidebar.html:174
 msgid "(DOWN)"
 msgstr "(ABAJO)"
 
