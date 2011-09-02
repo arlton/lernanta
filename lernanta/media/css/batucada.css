@@ -1195,7 +1195,33 @@ header {}
   z-index: -9999;
   margin-top: 40px;
   opacity: 0.9;
-  height: 236px;
+  height: 220px;
+  width: 960px;
+  background: url("/media/images/breakdown.png") no-repeat 20px 0;
+}
+
+#breakdown ul {
+padding-top: 190px;
+}
+
+#breakdown ul li {
+display: inline;
+margin: 0 200px 0 0;
+font-size: 20px;
+color: #000;
+}
+
+#breakdown ul li:first-child {
+margin-left: 25px;
+}
+
+#breakdown ul li.third-child {
+margin-left: -10px;
+}
+
+#breakdown ul li:last-child {
+margin-right: 0;
+margin-left: -50px;
 }
   
 #main {
