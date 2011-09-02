@@ -1,7 +1,18 @@
+#main-nav {
+  margin-top: 22px;
+  padding-left: 190px;
+}
 
+#main-nav li:last-child {
+  padding: 0 0 6px 12px;
+}
+
+#user-nav {
+margin-top: 18px;
+} 
 
 #splash #content header h1{
-  font-size: 48px;
+  font-size: 44px;
 }
 
 #intro-links a {
@@ -14,6 +25,19 @@
 
 #user-nav a.top-level, #main-nav a.top-level {
   padding: 4px 6px 8px 0px;
+}
+
+#call-to-action h1{
+  font-size: 30px;
+}
+
+#call-to-action p{
+  font-size: 12px;
+  width: 540px;
+}
+
+#footer-schools-wrapper p {
+  font-size: 22px;
 }
 
 footer[class="main"] ul {
