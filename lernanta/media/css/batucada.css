@@ -389,7 +389,7 @@ header {}
 
     #main-nav li:last-child {
       border: none;
-      padding: 0 0 6px 0;
+      padding: 0 0 6px 4px;
     }
 
     #user-nav {
@@ -1053,7 +1053,7 @@ header {}
 		font-style: italic;
 	}
 	.card-list section h1 span{
-		background: #F3F4F6;
+		background: #FFFFFF;
 		-webkit-box-shadow: 0 0 5px #f7f7f7 ;
 		padding:  0 6px;
 	}
