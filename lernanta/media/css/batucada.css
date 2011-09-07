@@ -726,8 +726,9 @@ header {}
     #breadcrumbs #breadcrumbs-actions {
         float: right;
         position: relative;
-        top: -47px;
+        top: -37px;
         margin-right: 10px;
+        width: 340px;
     }
     
     #user_profile #breadcrumbs #breadcrumbs-actions, #project_gallery #breadcrumbs #breadcrumbs-actions,
@@ -775,6 +776,13 @@ header {}
 #content {
   padding-top: 17px;
 }
+
+#sidebar-wrapper {
+width: 245px;
+float: left;
+clear: both;
+}
+
   #sidebar {
     float: left;
     width: 245px;
@@ -783,6 +791,18 @@ header {}
     border-radius: 10px;
     border: solid 1px #EEE;
   }
+
+  #bottom-sidebar {
+    float: left;
+    width: 245px;
+    background-color: #fff;
+    padding: 13px;
+    border-radius: 10px;
+    border: solid 1px #EEE;
+    clear: both;
+    margin-top: 20px;
+  }
+
 
   #school_home #sidebar {
       float: right;
@@ -805,7 +825,6 @@ header {}
 		width: 100%;
 		padding-bottom: 18px;
 		margin-top:18px ;
-		border-bottom: 1px solid #ccc;
 	    box-shadow:  0 1px 0 rgba(255,255,255,0.8);
 	    -moz-box-shadow:  0 1px 0 rgba(255,255,255,0.8);
 	    -webkit-box-shadow:  0 1px 0 rgba(255,255,255,0.8);	    
@@ -861,6 +880,7 @@ header {}
         font-weight: bold;
         font-size: 100%;
         clear: both;
+        color: #444;
       }
       
       #project-icons img {
@@ -1034,6 +1054,73 @@ header {}
             -moz-text-shadow: #fff 1px 1px 0px;
             -webkit-text-shadow: #fff 1px 1px 0px;
           }
+
+#sidebar #project a.challenge-button {
+ float: left;
+ margin: 0 0 0 30px;
+ background-color: #7fbf4d;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));
+ /* Saf4+, Chrome */
+ background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: linear-gradient(top, #7fbf4d, #63a62f);
+ border: 1px solid #63a62f;
+ border-bottom: 1px solid #5b992b;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ -ms-border-radius: 3px;
+ -o-border-radius: 3px;
+ border-radius: 3px;
+ -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -ms-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -o-box-shadow: inset 0 1px 0 0 #96ca6d;
+ box-shadow: inset 0 1px 0 0 #96ca6d;
+ color: #fff;
+ font: bold 17px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+ line-height: 1;
+ padding: 7px 8px 8px 8px;
+ text-align: center;
+ text-shadow: 0 -1px 0 #4c9021;
+ width: 160px; 
+}
+ 
+#sidebar #project a.challenge-button:hover {
+   background-color: #76b347;
+   background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));
+   /* Saf4+, Chrome */
+   background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+   background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+   background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+   background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+   background-image: linear-gradient(top, #76b347, #5e9e2e);
+   -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+   -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+   -ms-box-shadow: inset 0 1px 0 0 #8dbf67;
+   -o-box-shadow: inset 0 1px 0 0 #8dbf67;
+   box-shadow: inset 0 1px 0 0 #8dbf67;
+   cursor: pointer; 
+   text-decoration: none;
+}
+
+#sidebar #project a.challenge-button:active {
+   border: 1px solid #5b992b;
+   border-bottom: 1px solid #538c27;
+   -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+   -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+   -ms-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+   -o-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+   box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; 
+}
+
+#sidebar #project .mentor-wrapper {
+  clear: both;
+  width: 100%;
+  padding: 10px 0 0 0;
+}
+
 
   #project_gallery{}
   #user_list{}
@@ -1225,7 +1312,7 @@ margin-left: -50px;
 }
   
 #main {
-  margin-left: 40px;
+  margin-left: 70px;
   width: 652px;
   float: left;
   background-color: white;
@@ -1234,6 +1321,66 @@ margin-left: -50px;
   border: solid 1px #EEE;
   z-index: -9999;
 }
+
+#main-challenge {
+  margin-left: 60px;
+  width: 652px;
+  float: left;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 1px #EEE;
+  z-index: -9999;
+}
+
+/* CSS Arlton Has Added */ 
+
+#main-people {
+  background-color: white;
+  margin-left: 60px;
+  margin-top: 20px;
+  width: 652px;
+  float: left;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: -9999;
+  border: solid 1px #EEE;
+}
+
+#main-people .break {
+  border-top: solid 1px #eee;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#main-people h2 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+h1#project-name {
+width: 75%;
+color: #444;
+}
+
+h1#project-name a {
+color: #444;
+}
+
+h2.school_header {
+color: #444;
+}
+
+.button-project {
+float: right;
+margin: -15px 25px 0 0;
+}
+
+h2.people-header {
+
+}
+
+/* CSS Arlton Has Added End */ 
 
 #project_gallery #main, #project_directory #main, #school_home #main , #user_list #main, #one-column-page #main {
   width: 970px;
@@ -2950,8 +3097,7 @@ div.voting div.score {
 }
 
 #task_header li a {
-    color: #5a6579;
-    padding-left: 13px;
+    color: #444;
 }
 
 #task_header li .action-buttons a {
@@ -2964,15 +3110,30 @@ div.voting div.score {
     color: #003366;
 }
 
+#task_header .taskCheckbox {
+margin-left: 15px;
+}
+
 #task_header .taskNumber {
-    background-color: #DEEEFB;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 7px 11px;
-    color: #5a6579;
-    text-shadow: none;
-    -moz-border-radius: 6px 6px 6px 6px;
-    -webkit-border-radius: 6px;
+    padding: 7px 5px 7px 15px;
+    color: #444;
+}
+
+#task_header .taskSelected {
+opacity: 0.7;
+}
+
+#task_header .taskLink {
+font-size: 18px;
+}
+
+#task_header a.taskView {
+display: none;
+color: #999;
+font-size: 14px;
+margin-left: 10px;
 }
 
 #more_task_link {
@@ -2987,6 +3148,114 @@ div.voting div.score {
     color: #bbb;
     font-weight: normal;
 }
+
+
+
+/* CSS for the Challenges Tasks */
+
+#challenge_task_header h2.challenge_header {
+color: #222;
+text-align: left;
+margin: 10px 0 0 10px;
+}
+
+#challenge_task_header #progress {
+width: 300px;
+float: right;
+}
+
+#challenge_task_header #progress #progressbar {
+width: 300px;
+height: 20px;
+background: #000;
+}
+
+#challenge_task_header #progress p {
+margin-top: 5px;
+float: right;
+}
+
+#challenge_task_header ul {
+    border-top: 1px solid #BEBEBE;
+    margin: 26px 0 0 2px;
+    padding-top: 17px;
+}
+#challenge_task_header li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 11px;
+    width: 640px;
+    padding: 8px 13px 8px 0;
+    background-color: #f8fcff;
+    display: inline-block;
+}
+#challenge_task_header li.odd {
+    background-color: #f3f8fe;
+}
+
+#challenge_task_header li a {
+    color: #444;
+}
+
+#challenge_task_header li .action-buttons a {
+    color: #2084ca;
+    float: right;
+    text-decoration: underline;
+}
+
+#challenge_task_header li .action-buttons a:hover {
+    color: #003366;
+}
+
+#challenge_task_header .taskCheckbox {
+margin-left: 15px;
+}
+
+#challenge_task_header .taskNumber {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 5px 7px 15px;
+    color: #444;
+}
+
+#challenge_task_header .taskSelected {
+opacity: 0.7;
+}
+
+#challenge_task_header .taskLink {
+font-size: 18px;
+}
+
+#challenge_task_header a.taskView {
+display: none;
+color: #999;
+font-size: 14px;
+margin-left: 10px;
+}
+
+#challenge_task_header #more_task_link {
+    text-align: right;
+    font-size: 14px;
+    padding-right: 13px;
+    font-weight: bold;
+}
+
+#challenge_task_header #task-count {
+    float: left;
+    color: #bbb;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
 .notice {
     text-align: center;
     margin-left: auto;

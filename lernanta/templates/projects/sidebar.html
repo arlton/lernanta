@@ -1,5 +1,7 @@
 {% load l10n_tags %}
 
+<div id="sidebar-wrapper">
+
 <div id="sidebar">
   <section id="project"class="panel">
     <figure class="project_img">
@@ -17,59 +19,25 @@
     <div id="project-summary">
       {{ project.long_description|safe }}
     </div>
-    {% if not organizing and not participating and not project.archived %}
-      {% if user.is_authenticated %}
-        {% if following %}
-          <form id="unfollow_button" method="post" action="{% locale_url relationships_unfollow object_type='course' slug=project.slug %}">
-            {% csrf_token %}
-            <button>{{ _('Unfollow') }}</button>
-          </form>
-        {% else %}
-          <form id="follow_button" method="post" action="{% locale_url relationships_follow object_type='course' slug=project.slug %}">
-            {% csrf_token %}
-            <button>{{ _('Follow') }}</button>
-          </form>
-        {% endif %}
-      {% endif%}
-      <p id="participate_button" {% if not user.is_authenticated %}class="login_participate_button"{% endif %}>
-        <a href="{% locale_url sign_up_answer slug=project.slug %}">{{ _('Enroll')}}</a>
-      </p>
-    {% endif %}
+
+	<a href="{% locale_url sign_up_answer slug=project.slug %}" class="challenge-button">{{ _('Start Challenge')}}</a>
+
+<div class="mentor-wrapper">
+          <a method="post" action="{% locale_url relationships_follow object_type='course' slug=project.slug %}">
+            Adopt this Challenge
+          </a>
+          or
+          <a method="post" action="{% locale_url relationships_follow object_type='course' slug=project.slug %}">
+            Become a Mentor
+          </a>
+</div>
   </section>
-
-<section id="people" class="panel">
-  <a id="more_task_link" style="float:right" href="{% locale_url projects_user_list slug=project.slug %}">{{_('See All')}} »</a>
-  <h2 class="school_header">{{ _('People') }}</h2>
-  <br>
-  {% for organizer in sidebar_organizers %}
-   <a href="{{ organizer.user.get_absolute_url }}" title="{{ organizer.user }} (organizer)"><img class="member-picture" src="{{ organizer.user.image_or_default }}" height="26" width="26" alt="{{ organizer.user }} (organizer)"></a>
-  {% endfor %}
-  {% for participant in sidebar_participants %}
-   <a href="{{ participant.user.get_absolute_url }}" title="{{ participant.user }} (participant)"><img class="member-picture" src="{{ participant.user.image_or_default }}" height="26" width="26" alt="{{ participant.user }} (participant)"></a>
-  {% endfor %}
-  {% for follower in sidebar_followers %}
-   <a href="{{ follower.source.get_absolute_url }}" title="{{ follower.source }} (follower)">
-   <img class="member-picture" src="{{ follower.source.image_or_default }}" height="26" width="26" alt="{{ follower.source }} (follower)"></a>
-  {% endfor %}
-
-  <br><br>
-  {% if organizing %}
-    <a class="button" href="{% locale_url projects_edit_participants slug=project.slug %}">{{ _('Edit Participants') }}</a>
-  {% else %}{% if user.is_authenticated %}
-    <a class="button" href="{% locale_url projects_contact_organizers slug=project.slug %}">{{ _('Contact Organizer')}}</a>
-  {% endif %}{% endif %}
-</section>
-
-
-    {% if organizing %}
-      <a class="button" href="{% locale_url projects_edit slug=project.slug %}">{{ _('Edit') }} {{ project.kind|title }}</a>
-    {% else %}
-      {% if user.is_authenticated %}
-        <p class="supplemental_actions">
-          <a class="report abuse action" href="{% locale_url drumbeat_abuse  model="project" app_label="projects" pk=project.id %}">{{_('Report Abuse')}}</a>
-        </p>
-      {% endif %}
-    {% endif %}
 
 </div> <!-- /#sidebar -->
 
+<div id="bottom-sidebar">
+<h2>Want to help?</h2>
+  <a href="#" class="challenge-button">{{ _('Become a Mentor')}}</a>
+</div>
+
+</div>

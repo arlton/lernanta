@@ -324,6 +324,7 @@ $(document).ready(function() {
         $(this).find('button[type=submit]').attr('disabled', 'disabled');
         $(this).find('#previewButton').removeAttr('disabled');
     });
+
 });
 
 // Recaptcha
@@ -343,3 +344,21 @@ $('#recaptcha_help').click(function(e) {
     e.preventDefault();
     Recaptcha.showhelp();
 });
+
+
+
+
+
+//-------------- jQuery that Arlton has added ---------------------//
+
+$("#challenge_task_header .taskCheckbox").click(function(){ 
+  $("#challenge_task_header li").toggleClass("taskSelected"); // This will affect all the li. It needs to only affect the checked one.
+});
+
+$('#challenge_task_header li').hover(function() {
+      $('#challenge_task_header .taskView').show();
+}, function() {
+      $('#challenge_task_header .taskView').hide();
+});
+
+
