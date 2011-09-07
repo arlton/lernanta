@@ -792,6 +792,26 @@ clear: both;
     border: solid 1px #EEE;
   }
 
+#sidebar .sidebar-break {
+  border-top: 1px solid #eee;
+  margin-top: 80px;
+}
+
+#sidebar .sidebar-badge-header {
+  background: #fff;
+  padding: 0 10px 0 15px;
+  margin: -25px 0 20px 80px;
+  display: block;
+  width: 60px;
+  font-size: 16px;
+}
+
+#sidebar img.sidebar-badge {
+  float: left;
+  margin: 0 auto 0 auto;
+  padding: 0 10px 0 10px;
+}
+
 #bottom-sidebar {
   float: left;
   width: 245px;
@@ -3254,14 +3274,17 @@ float: right;
 }
 
 #challenge_task_header #progress #progressbar {
-width: 300px;
+width: 290px;
 height: 20px;
-background: #000;
+background: #999;
+color: #fff;
+padding: 2px 0 0 10px;
 }
 
 #challenge_task_header #progress p {
 margin-top: 5px;
 float: right;
+color: #444;
 }
 
 #challenge_task_header ul {
@@ -3334,12 +3357,6 @@ margin-left: 10px;
     color: #bbb;
     font-weight: normal;
 }
-
-
-
-
-
-
 
 
 
