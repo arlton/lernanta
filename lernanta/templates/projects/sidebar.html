@@ -14,30 +14,25 @@
       </a>
     </figure>
     <div id="project-description">
-        {{ project.short_description }}
+        <p>Lorem ipsum dolor sit amet, consectetur</p>
     </div>
     <div id="project-summary">
-      {{ project.long_description|safe }}
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-
-	<a href="{% locale_url sign_up_answer slug=project.slug %}" class="challenge-button">{{ _('Start Challenge')}}</a>
-
-<div class="mentor-wrapper">
-          <a method="post" action="{% locale_url relationships_follow object_type='course' slug=project.slug %}">
-            Adopt this Challenge
-          </a>
-          or
-          <a method="post" action="{% locale_url relationships_follow object_type='course' slug=project.slug %}">
-            Become a Mentor
-          </a>
-</div>
+    <a href="{% locale_url sign_up_answer slug=project.slug %}" class="challenge-button">{{ _('Start Challenge')}}</a>
   </section>
-
 </div> <!-- /#sidebar -->
 
 <div id="bottom-sidebar">
 <h2>Want to help?</h2>
-  <a href="#" class="challenge-button">{{ _('Become a Mentor')}}</a>
+  <a href="#" class="mentor-button">{{ _('Become a Mentor')}}</a>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<hr class="bottom-sidebar-break">
+<p class="bottom-sidebar-or">or</p>
+
+  <a class="bottom-sidebar-adopt" href="#">Adopt this Challenge</a>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 
 </div>
