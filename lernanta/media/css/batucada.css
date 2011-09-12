@@ -3440,10 +3440,18 @@ a#beta-tag:hover {
 
 #footer-schools-wrapper {
   margin-top: 40px;
-  padding-top: 45px;
   background: #fff;
-  height: 100px;
+  height: 150px;
   border-top: 1px solid #ccc;
+}
+
+#footer-schools-wrapper h5 {
+  color: #ccc;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 15px 0 15px 60px;
 }
 
 #footer-schools-wrapper a {
