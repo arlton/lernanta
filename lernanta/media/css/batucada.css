@@ -3439,16 +3439,74 @@ a#beta-tag:hover {
 
 
 #footer-schools-wrapper {
-	margin-top: 40px;
-	background: #fff;
-	height: 120px;
+  margin-top: 40px;
+  padding-top: 45px;
+  background: #fff;
+  height: 100px;
   border-top: 1px solid #ccc;
 }
 
-#footer-schools-wrapper img {
-	float: right;
-  margin: 35px 25px 0 25px;
+#footer-schools-wrapper a {
+  color: #555;
 }
+
+#footer-schools-wrapper a:hover {
+  color: #2184ca;
+  text-decoration: underline;
+}
+
+
+#footer-schools-wrapper img {
+  width: 41px;
+  float: left;
+  margin-right: 10px;
+}
+
+#footer-schools-wrapper .footer-schools-soe {
+  width: 186px;
+  float: right;
+  margin-right: 45px;
+  margin-left: 25px;
+}
+
+	#footer-schools-wrapper .footer-schools-soe p {
+	  font-size: 18px;
+	  margin-top: 10px;
+	}
+
+#footer-schools-wrapper .footer-schools-somf {
+  width: 193px;
+  float: right;
+  margin-right: 35px;
+  margin-left: 25px;
+}
+
+	#footer-schools-wrapper .footer-schools-somf p {
+	  font-size: 18px;
+	}
+
+#footer-schools-wrapper .footer-schools-sosi {
+  width: 179px;
+  float: right;
+  margin-right: 35px;
+  margin-left: 25px;
+}
+
+	#footer-schools-wrapper .footer-schools-sosi p {
+	  font-size: 18px;
+	}
+
+#footer-schools-wrapper .footer-schools-sow {
+  width: 155px;
+  float: right;
+  margin-right: 35px;
+  margin-left: 25px;
+}
+
+	#footer-schools-wrapper .footer-schools-sow p {
+	  font-size: 18px;
+	  margin-top: 10px;
+	}
 
 #footer-wrapper {
 	width: 100%;

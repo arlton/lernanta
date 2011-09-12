@@ -1,15 +1,28 @@
 {% load l10n_tags %}
 
 <div id="footer-schools-wrapper">
-	<div class="container">
-<a href="{% locale_url static_page_show 'school-of-education' %}"><img src="{{ MEDIA_URL }}images/soe-small.png" alt="{{ _('School of Education') }}"></a>
-
-<a href="{% locale_url static_page_show 'school-of-the-mathematical-future' %}"><img src="{{ MEDIA_URL }}images/somf-small.png" alt="{{ _('School of the Mathematical Future') }}"></a>
-
-<a href="{% locale_url static_page_show 'school-of-social-innovation' %}"><img src="{{ MEDIA_URL }}images/sosi-small.png" alt="{{ _('School of Social Innovation') }}"></a>
-
-<a href="{% locale_url static_page_show 'school-of-webcraft' %}"><img src="{{ MEDIA_URL }}images/sow-small.png" alt="{{ _('School of Webcraft') }}"></a>
-</div>
+  <div class="container">
+    <div class="footer-schools-soe">
+      <a href="{% locale_url static_page_show 'school-of-education' %}"><img src="{{ MEDIA_URL }}images/soe-small.png" alt="{{ _('School of Education') }}">
+        <p>{{ _('EDUCATION') }}</p>
+      </a>
+    </div>
+    <div class="footer-schools-somf">
+      <a href="{% locale_url static_page_show 'school-of-the-mathematical-future' %}"><img src="{{ MEDIA_URL }}images/somf-small.png" alt="{{ _('School of the Mathematical Future') }}">
+        <p>{{ _('MATHEMATICAL FUTURE') }}</p>
+      </a>
+    </div>
+    <div class="footer-schools-sosi">
+      <a href="{% locale_url static_page_show 'school-of-social-innovation' %}"><img src="{{ MEDIA_URL }}images/sosi-small.png" alt="{{ _('School of Social Innovation') }}">
+        <p>{{ _('SOCIAL INNOVATION') }}</p>
+      </a>
+    </div>
+    <div class="footer-schools-sow">
+      <a href="{% locale_url static_page_show 'school-of-webcraft' %}"><img src="{{ MEDIA_URL }}images/sow-small.png" alt="{{ _('School of Webcraft') }}">
+        <p>{{ _('WEBCRAFT') }}</p>
+      </a>
+    </div>  
+  </div>
 </div>
 
 <footer id="footer-wrapper">
