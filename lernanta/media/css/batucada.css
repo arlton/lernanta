@@ -3276,8 +3276,6 @@ float: right;
 #challenge_task_header #progress #progressbar {
 width: 290px;
 height: 20px;
-background: #999;
-color: #fff;
 padding: 2px 0 0 10px;
 }
 
