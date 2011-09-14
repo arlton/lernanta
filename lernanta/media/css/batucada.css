@@ -3319,7 +3319,13 @@ color: #444;
     color: #003366;
 }
 
-#challenge_task_header .taskCheckbox {
+#challenge_task_header .taskCheckbox-wrapper {
+width: 30px;
+height: 20px;
+display: inline-block;
+}
+
+#challenge_task_header .taskCheckbox-wrapper .taskCheckbox {
 margin-left: 15px;
 }
 
