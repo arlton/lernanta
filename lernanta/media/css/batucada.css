@@ -794,7 +794,7 @@ clear: both;
 
 #sidebar .sidebar-break {
   border-top: 1px solid #eee;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 #sidebar .sidebar-badge-header {
@@ -804,6 +804,7 @@ clear: both;
   display: block;
   width: 60px;
   font-size: 16px;
+  color: #222;
 }
 
 #sidebar img.sidebar-badge {
@@ -1256,19 +1257,19 @@ clear: both;
 }
  
 #sidebar #project a.discuss-button:hover {
-  background-color: #52a8e8;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#52a8e8), to(#377ad0));
+  background-color: #4C9EDA;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4C9EDA), to(#3271C2));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, #52a8e8, #377ad0);
-  background-image: -moz-linear-gradient(top, #52a8e8, #377ad0);
-  background-image: -ms-linear-gradient(top, #52a8e8, #377ad0);
-  background-image: -o-linear-gradient(top, #52a8e8, #377ad0);
-  background-image: linear-gradient(top, #52a8e8, #377ad0);
- -webkit-box-shadow: inset 0 1px 0 0 #52a8e8;
- -moz-box-shadow: inset 0 1px 0 0 #52a8e8;
- -ms-box-shadow: inset 0 1px 0 0 #52a8e8;
- -o-box-shadow: inset 0 1px 0 0 #52a8e8;
- box-shadow: inset 0 1px 0 0 #52a8e8;
+  background-image: -webkit-linear-gradient(top, #4C9EDA, #3271C2);
+  background-image: -moz-linear-gradient(top, #4C9EDA, #3271C2);
+  background-image: -ms-linear-gradient(top, #4C9EDA, #3271C2);
+  background-image: -o-linear-gradient(top, #4C9EDA, #3271C2);
+  background-image: linear-gradient(top, #4C9EDA, #3271C2);
+ -webkit-box-shadow: inset 0 1px 0 0 #4C9EDA;
+ -moz-box-shadow: inset 0 1px 0 0 #4C9EDA;
+ -ms-box-shadow: inset 0 1px 0 0 #4C9EDA;
+ -o-box-shadow: inset 0 1px 0 0 #4C9EDA;
+ box-shadow: inset 0 1px 0 0 #4C9EDA;
    cursor: pointer; 
    text-decoration: none;
 }
@@ -1280,6 +1281,12 @@ clear: both;
  -ms-box-shadow: inset 0 1px 0 0 #52a8e8;
  -o-box-shadow: inset 0 1px 0 0 #52a8e8;
  box-shadow: inset 0 1px 0 0 #52a8e8;
+}
+
+#sidebar #project a.leave-challenge {
+  margin: 0 0 0 65px;
+  padding-top: 40px;
+  display: block;
 }
 
 #sidebar #project .mentor-wrapper {
