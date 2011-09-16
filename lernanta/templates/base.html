@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="{{ MEDIA_URL }}css/batucada.css?v=1">
   <link rel="stylesheet" href="{{ MEDIA_URL }}{{ _('css/style-en.css') }}?v=1">
   <link rel="stylesheet" href="{{ MEDIA_URL }}js/libs/prettify/prettify.css">
+  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/jquery.fancybox-1.3.4.css" media="screen" />
   <script src="{{ MEDIA_URL }}js/libs/modernizr-1.6.min.js"></script>
   <script src="{{ MEDIA_URL }}ckeditor/ckeditor/ckeditor.js"></script>
   {% block links %}{% endblock %}
@@ -135,6 +136,17 @@
   <script src="{{ MEDIA_URL }}js/libs/jquery.wmd.js"></script>
   <script src="{{ MEDIA_URL }}js/libs/jquery.ajaxupload.js"></script>
   <script src="{{ MEDIA_URL }}js/libs/prettify/prettify.js"></script>
+  <script src="{{ MEDIA_URL }}js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+	$("#discuss-modal").fancybox({
+	  'titlePosition'		: 'inside',
+	  'transitionIn'		: 'none',
+	  'transitionOut'		: 'none'
+	});
+    });
+  </script>
 
   <script type="text/javascript">
     var uservoiceOptions = {

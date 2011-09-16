@@ -19,14 +19,17 @@
     <div id="project-summary">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <a href="{% locale_url sign_up_answer slug=project.slug %}" class="challenge-button">{{ _('Start Challenge')}}</a>
+    <a id="discuss-modal" href="#discuss-challenge" class="discuss-button">{{ _('Discuss Challenge')}}</a>
+    <div style="display: none;">
+      <div id="discuss-challenge" style="width:600px;height:400px;overflow:auto;">
+      </div>
+    </div>
     <hr class="sidebar-break">
     <p class="sidebar-badge-header">Badges</p>
     <img class="sidebar-badge" src="http://dummyimage.com/100x100/000/fff.png">
     <img class="sidebar-badge" src="http://dummyimage.com/100x100/000/fff.png">
   </section>
 </div> <!-- /#sidebar -->
-
 <div id="bottom-sidebar">
    <h2>Want to help?</h2>
    <form method="post" action="#">
@@ -38,5 +41,4 @@
   <a href="#" class="bottom-sidebar-mentor">{{ _('Become a Mentor')}}</a>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
-
 </div>
