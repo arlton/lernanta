@@ -22,7 +22,7 @@
   <div id="challenge_task_header">
   <div id="progress">
   <div id="progressbar">Progress bar goes here</div>
-  <p>2/6 Completed</p>
+  <p>5/5 Completed</p>
   </div>
   <h2 style="text-align: left; margin: 10px 0 20px 10px; font-size: 24px; font-style:normal; width: 200px; font-color: #222;" class="challenge_header">{{ _('Tasks') }}</h2>
       <ul>
@@ -71,25 +71,29 @@
           <a class="taskView" href="/en/groups/fdgasdfg/content/this-is-task-1/">View and Discuss</a>
           <span class="taskSubheader">This is the subheader for the Give feedback to the community task.</span>
         </li>
-        <li class="even">
-          <span class="taskCheckbox-wrapper">
-          <input class="taskCheckbox" type="checkbox">
-          </span>
-          <span class="taskNumber">6.</span> 
-          <a class="taskLink" href="/en/groups/fdgasdfg/content/this-is-task-1/">Submit your work for review</a>
-          <a class="taskView" href="/en/groups/fdgasdfg/content/this-is-task-1/">View and Discuss</a>
-          <span class="taskSubheader">This is the subheader for the Submit your work for review task.</span>
-        </li>
       </ul>
   </div>
   {% endif %}
+
+  <div class="tasks-complete">
+    <h2>Congratulations!</h2>
+    <button class="next-challenge-button">{{ _('Next Challenge') }}</button>
+    <span>or</span>
+    <button class="apply-badge-button">{{ _('Apply for Badge') }}</button>
+  </div>
 
 </div> <!-- /#main -->
 
 <div id="main-people">
 
 <section id="people" class="panel">
-  <h2 class="school_header">{{ _('<strong>Need help?</strong> Peers that can help you with this challenge:') }}</h2>
+  <div class="need-help">
+    <h2>{{ _('Start learning with your peers.') }}</h2>
+    <p>You're not alone in your quest for knowledge. There are other peers learning along side you and if you need help, there are mentors that can answer your questions.</p>
+    <button class="request-mentor-button">{{ _('Request a Mentor') }}</button>
+  </div>
+  <hr class="break">
+  <h3 class="peers-help">{{ _('Peers who have offered their help') }}</h3>
   <br>
 <a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
 
@@ -102,8 +106,7 @@
 <a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
 
   <hr class="break">
-
-  <h2 class="school_header">{{ _('Peers taking this challenge:') }}</h2>
+  <h3 class="peers-challenge">{{ _('Peers taking this challenge') }}</h3>
   <br>
 <a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
 
@@ -150,8 +153,102 @@
 <a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
 
 <a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
-<p></p>
-<a style=" margin-top: 20px; clear: both;" href="{% locale_url projects_user_list slug=project.slug %}">{{_('View all')}} »</a>
+
+  <hr class="break">
+  <h3 class="peers-complete">{{ _('Peers who have completed this challenge') }}</h3>
+  <br>
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
+<a href="/en/arlton/" title="Arlton (organizer)"><img class="member-picture" src="http://www.gravatar.com/avatar/6a32b3ae451981e8e451bb31dab435f4?s=54&amp;d=http%3A%2F%2Fp2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&amp;r=g" height="40" width="40" alt="Arlton (organizer)"></a>
+
 </section>
 
 </div> <!-- /#main-people -->

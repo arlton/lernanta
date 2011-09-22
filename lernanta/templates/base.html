@@ -146,6 +146,16 @@
 	  'transitionIn'		: 'none',
 	  'transitionOut'		: 'none'
 	});
+        
+        $('div.tasks-complete').hide();
+
+        $(".taskCheckbox").toggle(
+            function(){
+                $('div.tasks-complete').fadeIn('slow');				
+                },
+            function() {
+                $('div.tasks-complete').fadeOut('fast');
+         });
     });
   </script>
 

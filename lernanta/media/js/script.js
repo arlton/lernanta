@@ -324,7 +324,6 @@ $(document).ready(function() {
         $(this).find('button[type=submit]').attr('disabled', 'disabled');
         $(this).find('#previewButton').removeAttr('disabled');
     });
-
 });
 
 // Recaptcha
@@ -359,7 +358,7 @@ $('#challenge_task_header li').hover(function() {
       $('#challenge_task_header .taskView').show();
 }, function() {
       $('#challenge_task_header .taskView').hide();
-});
-
+});	
+		
 
 
