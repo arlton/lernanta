@@ -1718,7 +1718,7 @@ font-size: 22px;
 }
 
 #main-people button.request-mentor-button {
- margin: 0;
+ margin: 0 20px 3px 0;
  background-color: #7fbf4d;
  background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));
  /* Saf4+, Chrome */
