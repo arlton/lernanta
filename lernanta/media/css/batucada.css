@@ -1813,13 +1813,13 @@ h2.people-header {
       -o-border-radius: 6px;
       -webkit-border-radius: 6px;
       min-height: 56px;
-      margin: 0 0 9px;
+      margin: 0 0 20px;
       border: 1px solid #c6c6c6;
       border-bottom: 2px solid #c6c6c6;
-      padding: 8px;
+      padding: 16px;
       behavior: url("/media/css/PIE.htc");
       float: left;
-      width: 630px;
+      width: 618px;
     }
     .modal .post-container {
         width: 550px;
@@ -1832,9 +1832,14 @@ h2.people-header {
      padding-left: 20px;
    }
 
-    .post-container.post-replies, #extra-indent-post-replies .post-container {
-	    margin-left: 30px;
-	    width: 575px;
+    .post-replies, #extra-indent-post-replies .post-container {
+      width: 544px;
+      min-height: 56px;
+      margin: 20px 0 0 63px;
+      border-top: 1px solid #c6c6c6;
+      padding: 20px 8px 0 0;
+      behavior: url("/media/css/PIE.htc");
+      float: left;
 	}
 
     .modal .post-container.post-replies {
@@ -2002,8 +2007,20 @@ h2.people-header {
 	    float: right;
 	}
 
+	#page #main .action-bottom {
+	    float: left;
+            display: block;
+            color: #919191;
+            text-decoration: none;
+            margin: 20px 15px 0 0;
+            padding-left: 20px;
+            left: 1px;
+            height: 16px;
+            line-height: 16px;
+	}
+
     #posts .post-comments {
-       float: right;
+       float: left;
     }
 
     #create_page .preview, #edit_page .preview {
@@ -2018,15 +2035,19 @@ h2.people-header {
     }
     #posts .reply-to{
 		background: url("/media/images/reply.icon.png") 0 0 no-repeat;
+                font-size: 14px;
 	}
     #posts .delete {
-		background: url("/media/images/delete-x.png") 0 0 no-repeat;
+		background: url("/media/images/delete-x.png") 3px 0 no-repeat;
+                font-size: 14px;
 	}
     #posts .restore{
 		background: url("/media/images/restore.icon.png") 0 0 no-repeat;
+                font-size: 14px;
 	}
     #posts .edit{
-		background: url("/media/images/edit.icon.png") 0 0 no-repeat;
+		background: url("/media/images/edit.icon.png") 4px 0 no-repeat;
+                font-size: 14px;
 	}
     .collaborative {
         background: url("/media/images/collaborative.png") 0 0 no-repeat;
@@ -2035,11 +2056,15 @@ h2.people-header {
 	#posts .report,
 	.supplemental_actions .report {
 		background: url("/media/images/report.icon.png") 0 1px no-repeat;
-		padding-left: 15px;		
+		padding-left: 15px;
+                display: none;	
 	}
 	.supplemental_actions .report {
 		background-position: 0 0;
 	}
+        .post-container .report {
+                display: none;
+        }
     #posts .action:hover {
       color: #777;
     }
@@ -2050,6 +2075,13 @@ h2.people-header {
     #posts .post-contents {
       padding-left: 64px;
     }
+
+      #posts .post-details h3 {
+        color: #919191;
+        font-weight: 300;
+        font-size: 16px;
+      }
+
       #posts .post-details, #posts .post-details a {
         color: #919191;
       }
@@ -2063,6 +2095,7 @@ h2.people-header {
       
       #posts .post-body, #posts .post-body p {
         margin: 10px 0;
+        color: #222;
       }
 
 	/* [Bugzilla - 656893] Styling pagination*/

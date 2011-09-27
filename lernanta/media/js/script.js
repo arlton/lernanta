@@ -354,11 +354,23 @@ $("#challenge_task_header .taskCheckbox").click(function(){
   $("#challenge_task_header li").toggleClass("taskSelected"); // This will affect all the li. It needs to only affect the checked one.
 });
 
-$('#challenge_task_header li').hover(function() {
-      $('#challenge_task_header .taskView').show();
+$('.project-kind-challenge #task_list_section li').hover(function() {
+      $(this).find('.taskView').show();
 }, function() {
-      $('#challenge_task_header .taskView').hide();
-});	
-		
+      $(this).find('.taskView').hide();
+});
+
+$('span.first-post').hover(function() {
+      $(this).find('.report').show();
+}, function() {
+      $(this).find('.report').hide();
+});
+
+$('span.post-replies').hover(function() {
+      $(this).find('.report').show();
+}, function() {
+      $(this).find('.report').hide();
+});
+	
 
 
