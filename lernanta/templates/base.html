@@ -147,14 +147,14 @@
 	  'transitionOut'		: 'none'
 	});
         
-        $('div.tasks-complete h2').css('color', '#fff');
-
         $(".taskCheckbox").toggle(
             function(){
-                $('div.tasks-complete h2').css('color', '#222');				
+                $('div.tasks-complete h2').fadeIn('slow');
+                $('div.tasks-complete p').fadeIn('slow');				
                 },
             function() {
-                $('div.tasks-complete h2').css('color', '#fff');
+                $('div.tasks-complete h2').fadeOut('fast');
+                $('div.tasks-complete p').fadeOut('fast');
          });
     });
   </script>
