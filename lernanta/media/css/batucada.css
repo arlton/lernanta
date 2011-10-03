@@ -852,7 +852,7 @@ clear: both;
   font-size: 16px
 }
 
-#bottom-sidebar button.adopt-button {
+#bottom-sidebar a.adopt-button {
  float: left;
  margin: 20px 20px 20px 30px;
  background-color: #7fbf4d;
@@ -884,7 +884,7 @@ clear: both;
  width: 180px; 
 }
  
-#bottom-sidebar button.adopt-button:hover {
+#bottom-sidebar a.adopt-button:hover {
  background-color: #76b347;
  background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));
  /* Saf4+, Chrome */
@@ -902,7 +902,7 @@ clear: both;
  text-decoration: none;
 }
 
-#bottom-sidebar button.adopt-button:active {
+#bottom-sidebar a.adopt-button:active {
  border: 1px solid #5b992b;
  border-bottom: 1px solid #538c27;
  -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
@@ -1600,7 +1600,7 @@ margin-left: 15px;
 font-size: 16px;
 }
 
-#main-challenge button.apply-badge-button {
+#main-challenge a.apply-badge-button {
  margin: 0 20px -7px 150px;
  background-color: #7fbf4d;
  background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));
@@ -1631,7 +1631,7 @@ font-size: 16px;
  width: 180px; 
 }
  
-#main-challenge button.apply-badge-button:hover {
+#main-challenge a.apply-badge-button:hover {
  background-color: #76b347;
  background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));
  /* Saf4+, Chrome */
@@ -1649,7 +1649,7 @@ font-size: 16px;
  text-decoration: none;
 }
 
-#main-challenge button.apply-badge-button:active {
+#main-challenge a.apply-badge-button:active {
  border: 1px solid #5b992b;
  border-bottom: 1px solid #538c27;
  -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
@@ -1725,7 +1725,9 @@ font-size: 22px;
   margin-left: 140px;
 }
 
-#main-people button.request-mentor-button {
+#main-people a.request-mentor-button {
+ display: block;
+ float: left;
  margin: 0 20px 3px 0;
  background-color: #7fbf4d;
  background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));
@@ -1750,13 +1752,13 @@ font-size: 22px;
  color: #fff;
  font: bold 13px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
  line-height: 1;
- padding: 7px 8px 8px 8px;
+ padding: 8px 8px 9px 8px;
  text-align: center;
  text-shadow: 0 -1px 0 #4c9021;
  width: 180px; 
 }
  
-#main-people button.request-mentor-button:hover {
+#main-people a.request-mentor-button:hover {
  background-color: #76b347;
  background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));
  /* Saf4+, Chrome */
@@ -1774,7 +1776,7 @@ font-size: 22px;
  text-decoration: none;
 }
 
-#main-people button.request-mentor-button:active {
+#main-people a.request-mentor-button:active {
  border: 1px solid #5b992b;
  border-bottom: 1px solid #538c27;
  -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
