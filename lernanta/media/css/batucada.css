@@ -952,9 +952,12 @@ font-size: 36px;
 margin-left: 25px;
 }
 
+.badge .badge-top img {
+margin-bottom: 20px;
+}
+
 .badge .badge-bottom {
 clear: both;
-padding-top: 20px;
 }
 
 .badge .badge-bottom a {
