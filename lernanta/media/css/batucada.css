@@ -3725,7 +3725,10 @@ display: block;
 }
 
 h1.tasks-title {
-width: 400px;
+width: 450px;
+font-size: 18px;
+height: 24px;
+padding-top: 5px;
 }
 
 #task-nav {
@@ -3745,7 +3748,7 @@ width: 400px;
   -o-border-radius: 3px;
   border-radius: 3px;
   display: block;
-  background: #222 url('/media/images/arrow-down-over.png') no-repeat 116px center;	
+  background: #333 url('/media/images/arrow-down-over.png') no-repeat 116px center;	
   font-weight: bold;
   width: 110px;
   float: right;
@@ -3766,12 +3769,12 @@ width: 400px;
 }
 
 #task-nav li.task-sub-nav {
-  background: #222;
+  background: #333;
 }
 
 #task-nav a {
   display:block;
-  padding: 10px 0 10px 10px;
+  padding: 6px 0 6px 10px;
   color:#fff;
   text-decoration:none;
 }
@@ -3805,7 +3808,7 @@ width: 400px;
 }
 
 #task-nav ul.task-nav-list {
-  border: 1px solid #222;
+  border: 1px solid #333;
   margin-top: -22px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3815,6 +3818,7 @@ width: 400px;
   position: relative;
   width: 100%;
   float: right;
+  font-size: 13px;
 }
 
 #task-nav ul.task-nav-list li {
