@@ -3724,6 +3724,108 @@ display: block;
     font-weight: normal;
 }
 
+h1.tasks-title {
+width: 400px;
+}
+
+#task-nav {
+  list-style:none;
+  margin:0;
+  float:right;
+  width:180px;
+  height: 34px;
+}
+
+#task-nav p.task-nav-header {
+  color: #fff;
+  padding: 8px 15px 8px 14px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  background: #222 url('/media/images/arrow-down-over.png') no-repeat 116px center;	
+  font-weight: bold;
+  width: 110px;
+  float: right;
+}
+
+#task-nav li {
+  float:right;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #333;	
+}
+
+#task-nav li.tasks {
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+  height: 34px;
+}
+
+#task-nav li.task-sub-nav {
+  background: #222;
+}
+
+#task-nav a {
+  display:block;
+  padding: 10px 0 10px 10px;
+  color:#fff;
+  text-decoration:none;
+}
+#task-nav a:hover{
+  color:#fff;
+  color: #2084CA;
+  text-decoration:none;
+}
+
+#task-nav ul{
+  list-style:none;
+  left:-9999px;
+}
+#task-nav ul li{
+  padding-top:1px;
+  float:none;
+}
+#task-nav ul a{
+  white-space:nowrap;
+}
+#task-nav li:hover ul{ 
+  left:0;
+}
+#task-nav li:hover a{
+  text-decoration:none;
+}
+#task-nav li:hover ul a{
+  text-decoration:none;
+}
+#task-nav li:hover ul li a:hover{
+}
+
+#task-nav ul.task-nav-list {
+  border: 1px solid #222;
+  margin-top: -22px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  width: 100%;
+  float: right;
+}
+
+#task-nav ul.task-nav-list li {
+position: relative;
+margin: 0;
+padding: 0;
+}
+
+#task-nav ul li:last-child {
+  border-bottom: none;
+}
 
 
 
