@@ -23,7 +23,7 @@
   {% endif %}
   <a class="button" href="{% locale_url page_history slug=project.slug page_slug=page.slug %}">{{ _('View History') }}</a>
   {% if can_comment %}
-    <a class="button" href="{{ new_comment_url }}">{{ _('Post Comment') }}</a>
+
   {% endif %}
 {% endblock %}
 
@@ -53,7 +53,17 @@
 
 {% if pagination_current_page.object_list %}
 
-<h1>{{_('Comments')}}</h1>
+<hr />
+
+<p class="task-done-question">Are you done with this task?</p>
+<a href="#" class="task-done-button">Yes, I'm done</a>
+
+</div>
+<div id="main" class="content_page task-discussion">
+
+    <a class="button post-task-comment" href="{{ new_comment_url }}">{{ _('Post Comment') }}</a>
+
+<h1 class="tasks-title">{{_('Task Discussion')}}</h1>
 <br>
 <ul id="posts">
   {% with comments=pagination_current_page.object_list %}
