@@ -112,6 +112,7 @@ button[type=submit],
     text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;
     border: 1px solid #608dae;
     border-color: #608dae #405f75 #3a5568 #608dae;
+    background: #ccc;
     background: -webkit-gradient(linear,0 top,0 bottom,from(#3fa3e9),to(#2171a9));
     background: -moz-linear-gradient(top,#3fa3e9,#2171a9);
     -pie-background: linear-gradient(top,#3fa3e9,#2171a9);
@@ -129,6 +130,7 @@ button[type=submit],
 button:hover,
 input[type=button]:hover,
 .button:hover{
+        background: #f9f9f9;
 	background: -moz-linear-gradient(top,#fff,#f6f6f6);
     -pie-background: linear-gradient(top,#fff,#f6f6f6);
 	background: -webkit-gradient(linear,0 top,0 bottom,from(#fff),to(#f6f6f6));
@@ -167,6 +169,7 @@ input[type=button]:active,
 button[type=submit]:hover,
 input[type=submit]:hover,
 .button.submit:hover{
+        background: #f9f9f9;
 	background: -moz-linear-gradient(top,#42aaf5,#3fa3e9);
     -pie-background: linear-gradient(top,#42aaf5,#3fa3e9);
 	background: -webkit-gradient(linear,0 top,0 bottom,from(#42aaf5),to(#3fa3e9));
@@ -193,6 +196,7 @@ input[type=submit]:focus,
 button[type=submit]:active,
 input[type=submit]:active,
 .button.submit:active {
+        background: #ccc;
 	background: -webkit-gradient(linear,0 top,0 bottom,from(#2171a9),to(#3fa3e9));
     background: -moz-linear-gradient(top,#2171a9,#3fa3e9);
     -pie-background: linear-gradient(top,#2171a9,#3fa3e9);
