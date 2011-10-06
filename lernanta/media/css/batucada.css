@@ -3274,6 +3274,15 @@ div.warning h2 {
 .messages li p:last-child {
     margin: 0;
 }
+
+.messages li img {
+   width: 20px;
+   height: 20px;
+   display: block;
+   float: left;
+   margin: 0 0 0 6px;
+}
+
 /* End of messages */
 
 /* Welcome to profile page */
