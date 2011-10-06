@@ -1829,8 +1829,14 @@ h2.people-header {
 
    #main .post-container.deleted {
      min-height: 10px;
-     color: #a00;
+     color: #fff;
      padding-left: 20px;
+     background: #cc0000;
+     border: 1px solid #fff;
+   }
+
+   #main .post-container.deleted .restore {
+     color: #fff;
    }
 
     .post-replies, #extra-indent-post-replies .post-container {
