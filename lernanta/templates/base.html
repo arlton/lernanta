@@ -122,7 +122,7 @@
     {% if messages %}
     <ul class="messages">
     {% for message in messages %}
-      <li class="{{message.tags}}"><img class="message-close" src="{{ MEDIA_URL }}images/close-notification.png">{{ message }}</li>
+      <li class="{{message.tags}}">{{ message }}</li>
     {% endfor %}
     </ul>
     {% endif %}
