@@ -3262,7 +3262,7 @@ div.warning h2 {
     border: 2px solid #f1f1f1;
 }
 .messages li.success, .messages li.info {
-    background: green url('/media/images/close-notification2.png') no-repeat 1em center;;
+    background: #66a039 url('/media/images/close-notification2.png') no-repeat 1em center;;
 }
 .messages li.error {
     background: #a00 url('/media/images/close-notification2.png') no-repeat 1em center;
