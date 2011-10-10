@@ -1342,10 +1342,10 @@ margin-bottom: 20px;
  box-shadow: inset 0 1px 0 0 #52a8e8;
 }
 
-#sidebar #project a.leave-challenge {
-  margin: 0 0 0 65px;
+#sidebar #project p.leave-challenge {
+  margin: 0;
   padding-top: 40px;
-  display: block;
+  text-align: center;
 }
 
 #sidebar #project .mentor-wrapper {
