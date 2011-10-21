@@ -8,8 +8,10 @@
       <a href="{{ project.get_absolute_url }}">
         {% if project.image %}
   	         <img src="{{ MEDIA_URL }}{{ project.image }}" width="243" height="150" alt="project image"/>
+                 <h2 class="project_img_overlay">Webcraft Challenge</h2>
         {% else %}
              <img src="/media/images/project-missing.png" width="243" height="150" alt="project image"/>
+             <h2 class="project_img_overlay">Webcraft Challenge</h2>
         {% endif %}
       </a>
     </figure>
@@ -19,8 +21,8 @@
     <div id="project-summary">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <a id="discuss-modal" href="#discuss-challenge" class="discuss-button">{{ _('Discuss Challenge')}}</a>
-     <p class="leave-challenge"><a href="#">Leave this Challenge</a></p>
+    <a id="discuss-modal" href="#discuss-challenge" class="discuss-button">{{ _('Leave Challenge')}}</a>
+     <p class="leave-challenge"><a href="#">&#8592; Back to Challenge List</a></p>
     <div style="display: none;">
       <div id="discuss-challenge" style="width:600px;height:400px;overflow:auto;">
       </div>

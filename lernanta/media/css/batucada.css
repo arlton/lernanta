@@ -774,7 +774,25 @@ header {}
     }
     
     #sidebar .project_img {
-        margin-bottom: 0;
+        z-index: -9999;
+        display: block;
+        height: 150px;
+        width: 243px;
+    }
+
+    #sidebar h2.project_img_overlay {
+        top:-50px;
+        height: 30px;
+        width: 243px;
+        background: #000;
+        z-index: 9999;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0 0 0;
+        opacity: 0.8;
+        text-shadow: none;
     }
 
 #content {
@@ -1038,13 +1056,17 @@ margin-bottom: 20px;
       #sidebar #project-description { 
 	    font-size: 12px;
         line-height: 18px;
+        padding-top: 20px;
       }
       
-	  #project-summary p,
-	  #sidebar #project-description p {
+	  #project-summary p {
 	    margin-bottom: 18px;
 	  }
-	  
+
+	  #sidebar #project-description p {
+	    margin-bottom: 0;
+	  }	  
+
 	  #sidebar #project-description {
         font-weight: bold;
         font-size: 100%;
