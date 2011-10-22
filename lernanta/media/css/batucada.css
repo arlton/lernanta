@@ -1565,7 +1565,9 @@ margin-left: -10px;
 margin-right: 0;
 margin-left: -50px;
 }
-  
+
+
+
 #main {
   margin-left: 70px;
   width: 652px;
@@ -1587,6 +1589,61 @@ margin-left: -50px;
   border: solid 1px #EEE;
   z-index: -9999;
 }
+
+#main-challenge .tasks-completed-msg {
+background: #fbfbfb;
+padding: 20px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ -ms-border-radius: 3px;
+ -o-border-radius: 3px;
+ border-radius: 3px;
+border: 1px solid #eee;
+text-align: center;
+}
+
+#main-challenge ul.congrats-blocks {
+width: 730px;
+margin: 0 0 260px 0;
+clear: both;
+}
+
+#main-challenge ul.congrats-blocks li {
+float: left;
+display: inline-block;
+border-right: 1px solid #eee;
+list-style: none;
+margin: 0;
+padding: 0 4px;
+width: 154px;
+min-height: 200px;
+}
+
+#main-challenge ul.congrats-blocks li img {
+float: left;
+padding: 3px;
+}
+
+#main-challenge ul.congrats-blocks li:first-child {
+padding: 0 4px 0 0;
+}
+
+#main-challenge ul.congrats-blocks li:last-child {
+border-right: none;
+padding: 0 0 0 4px;
+}
+
+#main-challenge .tasks-completed-msg .help-others {
+text-align: center;
+clear: both;
+border-top: 1px solid #eeeeee;
+padding-top: 10px;
+}
+
+#main-challenge .tasks-completed-msg .help-others h4 {
+padding-bottom: 10px;
+}
+
 
 #main-challenge .tasks-complete {
 margin-top: 10px;
