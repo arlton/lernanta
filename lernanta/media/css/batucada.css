@@ -3885,6 +3885,10 @@ text-align: center;
 margin: 0 0 0 0;
 }
 
+#challenge_task_header .subtaskActivity {
+font-size: 10px;
+}
+
 h1.tasks-title {
 width: 450px;
 font-size: 18px;
