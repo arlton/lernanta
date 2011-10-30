@@ -4,6 +4,15 @@
 	http://0.0.0.0:8000/media/css/batucada.css?v=1
 */
 
+@font-face{ 
+	font-family: 'WebSymbolsRegular';
+	src: url('/media/fonts/websymbols-regular-webfont.eot');
+	src: url('/media/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/media/fonts/websymbols-regular-webfont.woff') format('woff'),
+	     url('/media/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+	     url('/media/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+	}
+
 pre {
 background: #ff0000;
 color: #fff;
@@ -3405,12 +3414,55 @@ div.warning h2 {
     -moz-border-radius: 4px;
     border: 2px solid #f1f1f1;
 }
+
 .messages li.success, .messages li.info {
-    background: #66a039 url('/media/images/close-notification2.png') no-repeat 1em center;;
+     background-color: #7fbf4d;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));
+ /* Saf4+, Chrome */
+ background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: linear-gradient(top, #7fbf4d, #63a62f);
+ border: 1px solid #63a62f;
+ border-bottom: 1px solid #5b992b;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ -ms-border-radius: 3px;
+ -o-border-radius: 3px;
+ border-radius: 3px;
+ -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -ms-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -o-box-shadow: inset 0 1px 0 0 #96ca6d;
+ box-shadow: inset 0 1px 0 0 #96ca6d;
+ color: #fff;
+ line-height: 1;
+ text-shadow: 0 -1px 0 #4c9021;
 }
 .messages li.error {
-    background: #a00 url('/media/images/close-notification2.png') no-repeat 1em center;
+    background-color: #C43C35;
+    background-image: -webkit-linear-gradient(top, #EE5F5B, #C43C35);
+    background-image: -moz-linear-gradient(center top , #EE5F5B, #C43C35);
+    background-image: -ms-linear-gradient(top, #EE5F5B, #C43C35);
+    background-image: -o-linear-gradient(top, #EE5F5B, #C43C35);
+    background-image: linear-gradient(top, #EE5F5B, #C43C35);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
+
+.messages .closeNotification {
+font-family: 'WebSymbolsRegular';
+width: 10px;
+height: 10px;
+float: right;
+color: #fff;
+display: block;
+text-shadow: 0 1px -1px #000;
+cursor: pointer;
+}
+
 .signin .messages {
     margin-top: -56px;
     margin-bottom: 18px;
