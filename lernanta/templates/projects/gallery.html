@@ -15,16 +15,16 @@
   <span class="arrow">&rsaquo;</span>
   <a href="{% locale_url projects_gallery %}{% if school %}?school={{ school.slug }}{% endif %}">{{ _('Learn') }}</a>
 {% endblock %}
-{% block breadcrumbs_actions %}
-  <a class="button" href="{% locale_url projects_directory %}{% if school %}?school={{ school.slug }}{% endif %}">{{ _('View All') }}</a>
-  {% if user.is_authenticated %}
-    {% if not school %}<a id="create-project" class="button" href="{% locale_url projects_create %}">{{ _('Create') }}</a>{% endif %}
-  {% endif %}
-{% endblock %}
 
 {% block body %}
 <div id="main">
-<h1>{{ _('Browse') }}</h1>
+<div class="learn">
+  <h1>{{ _('Learn with your peers.') }}</h1>
+  <p>We encourage you to browse the list of courses and join one which is open, and which you think may be of interest to you. You can also create your own course on any subject you feel comfortable teaching. Peers learning from and educating each other is what P2PU is all about.</p>
+<a class="view-all-button" href="{% locale_url projects_directory %}{% if school %}?school={{ school.slug }}{% endif %}">{{ _('View All Courses') }}</a>
+<a class="create-course-button" href="{% locale_url projects_create %}">{{ _('Create a Course') }}</a>
+
+</div>
 <br><br>
 {% project_list school %}
 </div>

@@ -4404,3 +4404,147 @@ footer[id="footer-wrapper"] ul[class="license-info"] li {
 footer[id="footer-wrapper"] ul[class="license-info"] li:last-child {
 	border: none;
 }
+
+#main .learn {
+margin: 40px 45px 0 45px;
+padding-bottom: 60px;
+}
+
+#main .learn h1 {
+    color: #000000;
+    font-family: helvetica,tahoma,Sans-serif;
+    font-size: 32px;
+    line-height: 0;
+    padding: 0;
+}
+
+#main .learn p {
+    color: #000000;
+    font-family: helvetica,tahoma,Sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 10px 0 25px 0;
+}
+
+#main a.view-all-button {
+ display: block;
+ float: left;
+ margin: 0 20px 3px 0;
+ background-color: #7fbf4d;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));
+ /* Saf4+, Chrome */
+ background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: linear-gradient(top, #7fbf4d, #63a62f);
+ border: 1px solid #63a62f;
+ border-bottom: 1px solid #5b992b;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ -ms-border-radius: 3px;
+ -o-border-radius: 3px;
+ border-radius: 3px;
+ -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -ms-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -o-box-shadow: inset 0 1px 0 0 #96ca6d;
+ box-shadow: inset 0 1px 0 0 #96ca6d;
+ color: #fff;
+ font: bold 13px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+ line-height: 1;
+ padding: 8px 8px 9px 8px;
+ text-align: center;
+ text-shadow: 0 -1px 0 #4c9021;
+ width: 180px; 
+}
+ 
+#main a.view-all-button:hover {
+ background-color: #76b347;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));
+ /* Saf4+, Chrome */
+ background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+ background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+ background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+ background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+ background-image: linear-gradient(top, #76b347, #5e9e2e);
+ -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+ -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+ -ms-box-shadow: inset 0 1px 0 0 #8dbf67;
+ -o-box-shadow: inset 0 1px 0 0 #8dbf67;
+ box-shadow: inset 0 1px 0 0 #8dbf67;
+ cursor: pointer; 
+ text-decoration: none;
+}
+
+#main a.view-all-button:active {
+ border: 1px solid #5b992b;
+ border-bottom: 1px solid #538c27;
+ -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+ -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+ -ms-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+ -o-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+ box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; 
+}
+
+
+#main a.create-course-button {
+ display: block;
+ float: left;
+ margin: 0 20px 3px 0;
+ background-color: #7fbf4d;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));
+ /* Saf4+, Chrome */
+ background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+ background-image: linear-gradient(top, #7fbf4d, #63a62f);
+ border: 1px solid #63a62f;
+ border-bottom: 1px solid #5b992b;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ -ms-border-radius: 3px;
+ -o-border-radius: 3px;
+ border-radius: 3px;
+ -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -ms-box-shadow: inset 0 1px 0 0 #96ca6d;
+ -o-box-shadow: inset 0 1px 0 0 #96ca6d;
+ box-shadow: inset 0 1px 0 0 #96ca6d;
+ color: #fff;
+ font: bold 13px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+ line-height: 1;
+ padding: 8px 8px 9px 8px;
+ text-align: center;
+ text-shadow: 0 -1px 0 #4c9021;
+ width: 180px; 
+}
+ 
+#main a.create-course-button:hover {
+ background-color: #76b347;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));
+ /* Saf4+, Chrome */
+ background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+ background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+ background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+ background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+ background-image: linear-gradient(top, #76b347, #5e9e2e);
+ -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+ -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+ -ms-box-shadow: inset 0 1px 0 0 #8dbf67;
+ -o-box-shadow: inset 0 1px 0 0 #8dbf67;
+ box-shadow: inset 0 1px 0 0 #8dbf67;
+ cursor: pointer; 
+ text-decoration: none;
+}
+
+#main a.create-course-button:active {
+ border: 1px solid #5b992b;
+ border-bottom: 1px solid #538c27;
+ -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+ -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+ -ms-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+ -o-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+ box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; 
+}
