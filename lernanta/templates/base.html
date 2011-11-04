@@ -71,7 +71,7 @@
 		  </ul>
 		  {% else %} {# user not logged in #}
 		  <ul id="login"> 
-                    <li><a class="top-level login" id="login-modal" href="{{ login_with_redirect_url }}">{{ _('Login') }}</a></li>
+                    <li><a class="top-level login" id="login-modal-action" href="#login-modal-data">{{ _('Login') }}</a></li>
                     <li><a href="http://help.p2pu.org" id="help-link" class="top-level"><span>{{ _('Help') }}</span></a></li>
                     <li><a href="http://blog.p2pu.org" class="top-level"><span>{{ _('Blog') }}</span></a></li>
 		  </ul>
@@ -94,8 +94,11 @@
       </div> <!-- /.container -->
     </div> <!-- /#masthead -->
 
+
+
+
 <div style="display:none">
-	<div id="login-modal">
+	<div id="login-modal-data">
 		<section>
 		  <article>
 			<h1>{{ _('Sign In') }} <span class="pester">{{ _('or') }} <a href="{% locale_url users_register %}" tabindex="7">{{ _('create an account') }}</a></span></h1>
@@ -103,20 +106,20 @@
 				<form action="{% locale_url users_login %}" method="post">
 				{% csrf_token %}
 				<p>{{ _('You can login directly with your username and password from the old P2PU website.') }}</p>
-				<div class="field{% if form.username.errors %} error{% endif %}">
+				<div class="field{% if user_login_form.username.errors %} error{% endif %}">
 				  <label for="id_username">{{ _('Username or Email') }}</label>
-				  {{ form.username }}
-				  {{ form.username.errors }}
+				  {{ user_login_form.username }}
+                  {{ user_login_form.username.errors }}
 				</div>
-				<div class="field{% if form.password.errors %} error{% endif %}">
+				<div class="field{% if user_login_form.password.errors %} error{% endif %}">
 				  <label for="id_password">{{ _('Password') }} <small class="hint">(<a href="{% locale_url users_forgot_password %}" tabindex="6">{{ _('Forgot your password?') }}</a>)</small></label>
-				  {{ form.password }}
-				  {{ form.password.errors }}          
+				  {{ user_login_form.password }}
+                  {{ user_login_form.password.errors }}          
 				</div>
-				<div class="field inline_label{% if form.remember_me.errors %} error{% endif %}">
+				<div class="field inline_label{% if user_login_form.remember_me.errors %} error{% endif %}">
 				  <label for="id_remember_me">
-				  {{ form.remember_me }}
-				  {{ form.remember_me.errors }}
+                  {{ user_login_form.remember_me }}
+                  {{ user_login_form.remember_me.errors }}
 				  {{ _('Remember Me') }}
 				  </label>
 				</div>        
@@ -179,7 +182,7 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
-	$("#login-modal").fancybox({
+	$("#login-modal-action").fancybox({
 	  'titlePosition'		: 'inside',
 	  'transitionIn'		: 'none',
 	  'transitionOut'		: 'none'
