@@ -95,31 +95,27 @@
     </div> <!-- /#masthead -->
 
 
-
-
 <div style="display:none">
 	<div id="login-modal-data">
 		<section>
 		  <article>
-			<h1>{{ _('Sign In') }} <span class="pester">{{ _('or') }} <a href="{% locale_url users_register %}" tabindex="7">{{ _('create an account') }}</a></span></h1>
+            <span class="pester">{{ _('Need an account?') }} <a href="{% locale_url users_register %}" tabindex="7">{{ _('Sign Up') }}</a></span>
+			<h1>{{ _('User Login') }}</h1>       
 			<fieldset>
 				<form action="{% locale_url users_login %}" method="post">
 				{% csrf_token %}
 				<p>{{ _('You can login directly with your username and password from the old P2PU website.') }}</p>
 				<div class="field{% if user_login_form.username.errors %} error{% endif %}">
 				  <label for="id_username">{{ _('Username or Email') }}</label>
-				  {{ user_login_form.username }}
-                  {{ user_login_form.username.errors }}
+				  <input type="text" tabindex="1" name="username" id="id_username">
 				</div>
 				<div class="field{% if user_login_form.password.errors %} error{% endif %}">
 				  <label for="id_password">{{ _('Password') }} <small class="hint">(<a href="{% locale_url users_forgot_password %}" tabindex="6">{{ _('Forgot your password?') }}</a>)</small></label>
-				  {{ user_login_form.password }}
-                  {{ user_login_form.password.errors }}          
+				  <input type="password" tabindex="2" name="password" maxlength="255" id="id_password">         
 				</div>
 				<div class="field inline_label{% if user_login_form.remember_me.errors %} error{% endif %}">
 				  <label for="id_remember_me">
-                  {{ user_login_form.remember_me }}
-                  {{ user_login_form.remember_me.errors }}
+                  <input type="checkbox" tabindex="3" name="remember_me" id="id_remember_me">
 				  {{ _('Remember Me') }}
 				  </label>
 				</div>        
