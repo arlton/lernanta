@@ -1,5 +1,100 @@
 {% load l10n_tags %}
 
+
+<section id="challenge-sets">
+  <h1><span>{{_('Challenge Sets')}}</span></h1>
+  <ul class="challenge-set-list">
+    <li>
+<article class="project card {% if project.accepted_school %}background-{{ project.accepted_school.slug }}{% endif%}">
+  <figure>
+    <a href="#">
+      <img src="/media/images/missing-challenge-set.png" width="448" height="125" alt=""/>
+    </a>
+  </figure>
+  <div class="info">
+    <h1>{{ _('This is the Challenge Set name')}}</h1>
+    <div class="description">{{ _('This is the Cheallenge Set description. This is where the Challenge owner would include some text about the set of Challenges.')}}</div> 
+  </div>
+  <div class="challenge-set-button">
+    <a id="challenge-set-modal-action" href="#challenge-set-modal-data">View all Challenges</a>
+  </div>
+  <div class="meta">
+    <dl class="meta-challenges">
+      <dd>{{ _('23')}}</dd>
+      <dt>{{ _('Challenges') }}</dt>
+    </dl>
+    <dl class="meta-participants">
+      <dd>{{ _('143')}}</dd>
+      <dt>{{ _('Participants') }}</dt>
+    </dl>
+    <dl class="meta-mentors">
+      <dd>{{ _('54')}}</dd>
+      <dt>{{ _('Mentors') }}</dt>
+    </dl>
+    <dl class="meta-badges">
+      <dd>{{ _('54')}}</dd>
+      <dt>{{ _('Badges') }}</dt>
+    </dl>
+  </div>
+
+
+<div style="display:none">
+	<div id="challenge-set-modal-data">
+       <h2>This is the Challenge Set name</h2>
+       <p>{{ _('This is the Cheallenge Set description. This is where the Challenge owner would include some text about the set of Challenges.')}}</p>
+       <ul>
+         <li><img src="http://dummyimage.com/200x100/000000/fff.png"></li>
+         <li><img src="http://dummyimage.com/200x100/000000/fff.png"></li>
+         <li><img src="http://dummyimage.com/200x100/000000/fff.png"></li>
+         <li><img src="http://dummyimage.com/200x100/000000/fff.png"></li>
+         <li><img src="http://dummyimage.com/200x100/000000/fff.png"></li>
+         <li><img src="http://dummyimage.com/200x100/000000/fff.png"></li>
+       </ul>
+<a href="#">Get started with the first Challenge now &#187;</a>
+	</div>
+</div>
+
+
+</article>
+    </li>
+    <li>
+<article class="project card {% if project.accepted_school %}background-{{ project.accepted_school.slug }}{% endif%}">
+  <figure>
+    <a href="#">
+      <img src="/media/images/missing-challenge-set.png" width="448" height="125" alt=""/>
+    </a>
+  </figure>
+  <div class="info">
+    <h1>{{ _('This is the Challenge Set name')}}</h1>
+    <div class="description">{{ _('This is the Cheallenge Set description. This is where the Challenge owner would include some text about the set of Challenges.')}}</div>
+  </div>
+  <div class="challenge-set-button">
+    <a id="challenge-set-modal-action" href="#challenge-set-modal-data">View all Challenges</a>
+  </div>
+  <div class="meta">
+    <dl class="meta-challenges">
+      <dd>{{ _('23')}}</dd>
+      <dt>{{ _('Challenges') }}</dt>
+    </dl>
+    <dl class="meta-participants">
+      <dd>{{ _('143')}}</dd>
+      <dt>{{ _('Participants') }}</dt>
+    </dl>
+    <dl class="meta-mentors">
+      <dd>{{ _('54')}}</dd>
+      <dt>{{ _('Mentors') }}</dt>
+    </dl>
+    <dl class="meta-badges">
+      <dd>{{ _('54')}}</dd>
+      <dt>{{ _('Badges') }}</dt>
+    </dl>
+  </div>
+</article>
+    </li>
+  </ul>
+</section>
+
+
 {% if featured %}
 <section id="featured_projects">
   <h1><span>{{_('Featured')}}</span></h1>
