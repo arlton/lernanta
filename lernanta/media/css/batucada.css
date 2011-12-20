@@ -4629,8 +4629,8 @@ margin-bottom: -10px;
 
 #challenge-sets .card .ribbon-wrapper h1 {
 text-align: center;
-color: #fff;
-text-shadow: 0 1px 1px #000;
+color: #2d5f74;
+text-shadow: 0 1px 1px #fff;
 font-size: 20px;
 display: block;
 }
@@ -4640,7 +4640,14 @@ display: block;
     margin: -30px 0 20px -8px;
 }
 #challenge-sets .card .ribbon-front {
-	background-color: #db5943;	
+	background-color: #bfdfea;	
+    background: -moz-linear-gradient(top,  #e7f2f7 0%, #bfdfea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7f2f7), color-stop(100%,#bfdfea));
+    background: -webkit-linear-gradient(top,  #e7f2f7 0%,#bfdfea 100%);
+    background: -o-linear-gradient(top,  #e7f2f7 0%,#bfdfea 100%);
+    background: -ms-linear-gradient(top,  #e7f2f7 0%,#bfdfea 100%);
+    background: linear-gradient(top,  #e7f2f7 0%,#bfdfea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7f2f7', endColorstr='#bfdfea',GradientType=0 );
     height: 40px;
 	width: 456px;
 	position: relative;
@@ -4682,7 +4689,7 @@ display: block;
 #challenge-sets .card .ribbon-edge-topleft,
 #challenge-sets .card .ribbon-edge-bottomleft {
 	left: -20px;
-	border-color: transparent #b64234 transparent transparent;
+	border-color: transparent #2d5f74 transparent transparent;
 }
 
 #challenge-sets .card .ribbon-edge-topleft {
@@ -4696,7 +4703,7 @@ display: block;
 #challenge-sets .card .ribbon-edge-topright,
 #challenge-sets .card .ribbon-edge-bottomright {
 	left: 416px;
-	border-color: transparent transparent transparent #a33625;
+	border-color: transparent transparent transparent #2d5f74;
 }
 
 #challenge-sets .card .ribbon-edge-topright {
