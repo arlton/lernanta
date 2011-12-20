@@ -4640,7 +4640,7 @@ display: block;
     margin: -30px 0 20px -8px;
 }
 #challenge-sets .card .ribbon-front {
-	background-color: #f45434;	
+	background-color: #db5943;	
     height: 40px;
 	width: 456px;
 	position: relative;
@@ -4696,7 +4696,7 @@ display: block;
 #challenge-sets .card .ribbon-edge-topright,
 #challenge-sets .card .ribbon-edge-bottomright {
 	left: 416px;
-	border-color: transparent transparent transparent #b64234;
+	border-color: transparent transparent transparent #a33625;
 }
 
 #challenge-sets .card .ribbon-edge-topright {
@@ -4759,16 +4759,6 @@ display: block;
 	#challenge-sets .card dt{
 		color: #919191;
 	}
-
-#challenge-sets .challenge-set-button a:before {
-border-left: 20px solid white;  
-border-right: 20px solid white;  
-content: '';  
-width: 202px;
-height: 10px;
-position: absolute;
-margin-left: -49px;
-}
 
 #challenge-sets .challenge-set-button a {
 width: 200px;
